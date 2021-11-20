@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:IP_TranslatorCalculator"
         mc:Ignorable="d"
-        Title="IP-számoló" Height="900" Width="1600" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
+        Title="IP-számoló" Height="900" Width="1600" ResizeMode="CanResizeWithGrip" WindowStartupLocation="CenterScreen" MinHeight="900" MinWidth="1600">
     <Grid x:Name="GrMain">
         <StackPanel Orientation="Horizontal" Height="60" VerticalAlignment="Top" Background="Gray">
             <Button Style="{StaticResource RoundButtonTemplate}" x:Name="BtnTranslate" Content="IP-v4 átváltó" Width="450" FontSize="36" FontWeight="Bold" Click="BtnClick_Translate" Margin="75,0,50,0"></Button>
@@ -13,7 +13,7 @@
             <Button  Style="{StaticResource RoundButtonTemplate}" x:Name="BtnNwAddress" Content="Hálozati cím számítása" Width="450" FontSize="36" FontWeight="Bold" Click="BtnClick_Nw" Margin="0,0,75,0"></Button>
         </StackPanel>
         <StackPanel Grid.Column="0" VerticalAlignment="Bottom">
-            <Button x:Name="BtnHome" Width="50" HorizontalAlignment="Right" Margin="0,0,20,20" >
+            <Button x:Name="BtnHome" Width="50" HorizontalAlignment="Right" Margin="0,0,20,20" Click="BtnHome_click">
                 <StackPanel>
                     <Image Source="/PngItem_2619202.png"></Image>
                 </StackPanel>

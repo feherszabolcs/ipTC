@@ -40,5 +40,12 @@ namespace IP_TranslatorCalculator
         {
             Main.Content = new NetworkOptimizer();
         }
+        private void BtnHome_click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.MainWindow = new MainWindow();
+            Application.Current.MainWindow.Show();
+            Window.GetWindow(this).Close();
+        }
+
     }
 }

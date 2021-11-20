@@ -27,7 +27,6 @@ Z:\2021 - '22\Prog\IP-TranslatorCalculator\bin\Debug\netcoreapp3.1\IP-Translator
 Z:\2021 - '22\Prog\IP-TranslatorCalculator\bin\Debug\netcoreapp3.1\IP-TranslatorCalculator.runtimeconfig.dev.json
 Z:\2021 - '22\Prog\IP-TranslatorCalculator\bin\Debug\netcoreapp3.1\IP-TranslatorCalculator.dll
 Z:\2021 - '22\Prog\IP-TranslatorCalculator\bin\Debug\netcoreapp3.1\IP-TranslatorCalculator.pdb
-Z:\2021 - '22\Prog\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\IP-TranslatorCalculator.csproj.AssemblyReference.cache
 Z:\2021 - '22\Prog\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\IPTranslate.g.cs
 Z:\2021 - '22\Prog\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\MainWindow.g.cs
 Z:\2021 - '22\Prog\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\NetworkOptimizer.g.cs
@@ -38,12 +37,10 @@ Z:\2021 - '22\Prog\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\IPTranslate.b
 Z:\2021 - '22\Prog\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\MainWindow.baml
 Z:\2021 - '22\Prog\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\NetworkOptimizer.baml
 Z:\2021 - '22\Prog\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\IP-TranslatorCalculator.g.resources
-Z:\2021 - '22\Prog\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\IP-TranslatorCalculator.GeneratedMSBuildEditorConfig.editorconfig
 Z:\2021 - '22\Prog\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\IP-TranslatorCalculator.AssemblyInfoInputs.cache
 Z:\2021 - '22\Prog\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\IP-TranslatorCalculator.AssemblyInfo.cs
-Z:\2021 - '22\Prog\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\IP-TranslatorCalculator.csproj.CoreCompileInputs.cache
 Z:\2021 - '22\Prog\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\IP-TranslatorCalculator.dll
 Z:\2021 - '22\Prog\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\IP-TranslatorCalculator.pdb
-Z:\2021 - '22\Prog\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\IP-TranslatorCalculator.genruntimeconfig.cache
 Z:\2021 - '22\Prog\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\App.baml
 D:\things\Programs\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\App.baml
+Z:\2021 - '22\Prog\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\IP-TranslatorCalculator.csprojAssemblyReference.cache

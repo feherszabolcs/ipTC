@@ -10,12 +10,19 @@
 
     <Grid Background="Gray" Margin="0,0,0,0">
         <Frame x:Name="Main" Margin="0,120,0,0" NavigationUIVisibility="Hidden"/>
-        <TextBox Margin="100,0,0,423" Height="80" HorizontalAlignment="Left" Width="300" VerticalAlignment="Bottom" FontSize="34" FontWeight="Bold" Name="tb1" Visibility="Hidden"/>
-        <TextBox Margin="461,0,0,423" Height="80" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="300" FontSize="34" FontWeight="Bold" Name="tb2" Visibility="Hidden"/>
-        <TextBox Width="300" HorizontalAlignment="Left" Margin="830,0,0,423" Height="80" VerticalAlignment="Bottom" FontSize="34" FontWeight="Bold" Name="tb3" Visibility="Hidden"/>
-        <TextBox Width="300" HorizontalAlignment="Left" Margin="1200,0,0,423" Height="80" VerticalAlignment="Bottom" FontSize="34" FontWeight="Bold" Name="tb4" Visibility="Hidden"/>
+        <TextBox Margin="100,0,0,423" Height="80" HorizontalAlignment="Left" Width="300" VerticalAlignment="Bottom" FontSize="34" FontWeight="Bold" Name="tb1" Visibility="Hidden" MaxLength="3"/>
+        <TextBox Margin="461,0,0,423" Height="80" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="300" FontSize="34" FontWeight="Bold" Name="tb2" Visibility="Hidden" MaxLength="3"/>
+        <TextBox Width="300" HorizontalAlignment="Left" Margin="830,0,0,423" Height="80" VerticalAlignment="Bottom" FontSize="34" FontWeight="Bold" Name="tb3" Visibility="Hidden" MaxLength="3"/>
+        <TextBox Width="300" HorizontalAlignment="Left" Margin="1200,0,0,423" Height="80" VerticalAlignment="Bottom" FontSize="34" FontWeight="Bold" Name="tb4" Visibility="Hidden" MaxLength="3"/>
         <CheckBox x:Name="ChbDec" Content="Decimális" Margin="0,0,1280,537" VerticalAlignment="Bottom" Height="36" FontSize="24" Checked="ChbDec_Checked" HorizontalAlignment="Right" Width="220" FontWeight="Bold"/>
         <CheckBox x:Name="ChbBin" Content="Bináris" HorizontalAlignment="Right" Margin="0,0,1222,537" VerticalAlignment="Bottom" Height="36" FontSize="24" FontWeight="Bold" Checked="ChbBin_Checked"/>
         <TextBox x:Name="TbBinform" HorizontalAlignment="Right" Margin="0,0,879,450" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="621" Height="80" FontSize="34" MaxLength="32" FontWeight="Normal" Visibility="Hidden"/>
+        <StackPanel Grid.Column="0" VerticalAlignment="Bottom">
+            <Button x:Name="BtnHome" Width="50" HorizontalAlignment="Right" Margin="0,0,20,20" Click="BtnHome_click" >
+                <StackPanel>
+                    <Image Source="/PngItem_2619202.png"></Image>
+                </StackPanel>
+            </Button>
+        </StackPanel>
     </Grid>
 </Page>

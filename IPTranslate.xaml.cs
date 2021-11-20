@@ -55,5 +55,12 @@ namespace IP_TranslatorCalculator
         {
             ChbBin.IsChecked = true;
         }
+
+        private void BtnHome_click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.MainWindow = new MainWindow();
+            Application.Current.MainWindow.Show();
+            Window.GetWindow(this).Close();
+        }
     }
 }
