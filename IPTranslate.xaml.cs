@@ -34,7 +34,6 @@ namespace IP_TranslatorCalculator
             tb2.Visibility = Visibility.Visible;
             tb3.Visibility = Visibility.Visible;
             tb4.Visibility = Visibility.Visible;
-            TbBinform.Visibility = Visibility.Hidden;
         }
 
         private void ChbBin_Checked(object sender, RoutedEventArgs e)
