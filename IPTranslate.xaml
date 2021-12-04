@@ -10,13 +10,13 @@
 
     <Grid Background="Gray" Margin="0,0,0,0">
         <Frame x:Name="Main" Margin="0,120,0,0" NavigationUIVisibility="Hidden"/>
-        <TextBox Margin="100,0,0,423" Height="80" HorizontalAlignment="Left" Width="300" VerticalAlignment="Bottom" FontSize="34" FontWeight="Bold" Name="tb1" Visibility="Hidden" MaxLength="3"/>
-        <TextBox Margin="461,0,0,423" Height="80" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="300" FontSize="34" FontWeight="Bold" Name="tb2" Visibility="Hidden" MaxLength="3"/>
-        <TextBox Width="300" HorizontalAlignment="Left" Margin="830,0,0,423" Height="80" VerticalAlignment="Bottom" FontSize="34" FontWeight="Bold" Name="tb3" Visibility="Hidden" MaxLength="3"/>
-        <TextBox Width="300" HorizontalAlignment="Left" Margin="1200,0,0,423" Height="80" VerticalAlignment="Bottom" FontSize="34" FontWeight="Bold" Name="tb4" Visibility="Hidden" MaxLength="3"/>
-        <CheckBox x:Name="ChbDec" Content="Decimális" Margin="0,0,1280,537" VerticalAlignment="Bottom" Height="36" FontSize="24" Checked="ChbDec_Checked" HorizontalAlignment="Right" Width="220" FontWeight="Bold"/>
-        <CheckBox x:Name="ChbBin" Content="Bináris" HorizontalAlignment="Right" Margin="0,0,1222,537" VerticalAlignment="Bottom" Height="36" FontSize="24" FontWeight="Bold" Checked="ChbBin_Checked"/>
-        <TextBox x:Name="TbBinform" HorizontalAlignment="Right" Margin="0,0,879,450" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="621" Height="80" FontSize="34" MaxLength="32" FontWeight="Normal" Visibility="Hidden"/>
+        <TextBox Margin="100,0,0,423" Height="80" HorizontalAlignment="Left" Width="300" VerticalAlignment="Bottom" FontSize="34" FontWeight="Bold" PreviewTextInput="tbDec_PreviewTextInput" Name="tb1" Visibility="Hidden" MaxLength="3" />
+        <TextBox Margin="461,0,0,423" Height="80" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="300" FontSize="34" FontWeight="Bold" PreviewTextInput="tbDec_PreviewTextInput" Name="tb2" Visibility="Hidden" MaxLength="3"/>
+        <TextBox Width="300" HorizontalAlignment="Left" Margin="830,0,0,423" Height="80" VerticalAlignment="Bottom" FontSize="34" FontWeight="Bold" PreviewTextInput="tbDec_PreviewTextInput" Name="tb3" Visibility="Hidden" MaxLength="3"/>
+        <TextBox Width="300" HorizontalAlignment="Left" Margin="1200,0,0,423" Height="80" VerticalAlignment="Bottom" FontSize="34" FontWeight="Bold" PreviewTextInput="tbDec_PreviewTextInput" Name="tb4" Visibility="Hidden" MaxLength="3"/>
+        <CheckBox x:Name="ChbDec" Content="Decimális" Margin="0,0,1240,537" VerticalAlignment="Bottom" Height="36" FontSize="24" Checked="ChbDec_Checked" HorizontalAlignment="Right" Width="220" FontWeight="Bold"/>
+        <CheckBox x:Name="ChbBin" Content="Bináris" HorizontalAlignment="Right" Margin="0,0,1182,537" VerticalAlignment="Bottom" Height="36" FontSize="24" FontWeight="Bold" Checked="ChbBin_Checked"/>
+        <TextBox x:Name="TbBinform" HorizontalAlignment="Right" Margin="0,0,839,423" Visibility="Hidden" PreviewTextInput="TbBinform_PreviewTextInput" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="621" Height="80" FontSize="34" MaxLength="32" FontWeight="Normal" />
         <StackPanel Grid.Column="0" VerticalAlignment="Bottom">
             <Button x:Name="BtnHome" Width="50" HorizontalAlignment="Right" Margin="0,0,20,20" Click="BtnHome_click" >
                 <StackPanel>
@@ -24,5 +24,8 @@
                 </StackPanel>
             </Button>
         </StackPanel>
+        <Button Content="Fordítás" Name="btnTranslate" HorizontalAlignment="Right" Margin="0,0,1347,346" VerticalAlignment="Bottom" Height="44" Width="113" Click="btnTranslate_Click"/>
+        <TextBox HorizontalAlignment="Right" Name="tbOutput" IsReadOnly="True" Margin="0,0,839,144" Visibility="Hidden" TextWrapping="Wrap"  VerticalAlignment="Bottom" Height="80" Width="621" FontSize="34"/>
+        <Label Content="" HorizontalAlignment="Right" Margin="0,0,913,229" VerticalAlignment="Bottom" Width="547" FontSize="20" Height="49" Name="lblOut"/>
     </Grid>
 </Page>

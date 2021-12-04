@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -34,6 +35,8 @@ namespace IP_TranslatorCalculator
             tb2.Visibility = Visibility.Visible;
             tb3.Visibility = Visibility.Visible;
             tb4.Visibility = Visibility.Visible;
+            TbBinform.Visibility = Visibility.Hidden;
+            ResetOutput();
         }
 
         private void ChbBin_Checked(object sender, RoutedEventArgs e)
@@ -48,6 +51,7 @@ namespace IP_TranslatorCalculator
             tb3.Visibility = Visibility.Hidden;
             tb4.Visibility = Visibility.Hidden;
             TbBinform.Visibility = Visibility.Visible;
+            ResetOutput();
         }
 
         private void Page_Loaded(object sender, RoutedEventArgs e)
@@ -60,6 +64,63 @@ namespace IP_TranslatorCalculator
             Application.Current.MainWindow = new MainWindow();
             Application.Current.MainWindow.Show();
             Window.GetWindow(this).Close();
+        }
+
+        private void TbBinform_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            Regex reg = new Regex("[^0-1]+");
+            e.Handled = reg.IsMatch(e.Text);
+        }
+
+        private void btnTranslate_Click(object sender, RoutedEventArgs e)
+        {
+            if(ChbBin.IsChecked == true)
+            {
+                string output = "";
+                string binS = TbBinform.Text;
+                if (binS.Length != 32) {
+                    MessageBox.Show("A megadott bináris forma nem 32 bit hosszú!", "Konvertálási hiba!", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+                else
+                {
+                    string first = binS.Substring(0, 8);
+                    string second = binS.Substring(8, 8);
+                    string third = binS.Substring(16, 8);
+                    string fourth = binS.Substring(24, 8);
+                    output = String.Format($"{BinToDec(first)}.{BinToDec(second)}.{BinToDec(third)}.{BinToDec(fourth)}");
+                    tbOutput.Visibility = (Visibility) 0;
+                    tbOutput.Text = output;
+                    lblOut.Content = "A binárisan megadott szám decimális formában leírva:";
+                }
+            }
+            else
+            {
+                string output = String.Format($"{Convert.ToString(int.Parse(tb1.Text), 2)}{Convert.ToString(int.Parse(tb2.Text), 2)}{Convert.ToString(int.Parse(tb3.Text), 2)}{Convert.ToString(int.Parse(tb4.Text), 2)}");
+                tbOutput.Visibility = (Visibility)0;
+                tbOutput.Text = output;
+                lblOut.Content = "A decimálisan megadott szám bináris formában:";
+
+            }
+        }
+        private string BinToDec(string octett) {
+
+            int r = Convert.ToInt32(octett, 2);            
+            return r.ToString();
+        }
+        private void ResetOutput()
+        {
+            tbOutput.Text = "";
+            tbOutput.Visibility = Visibility.Hidden;
+            lblOut.Content = "";
+            TbBinform.Text = tb1.Text = tb2.Text = tb3.Text = tb4.Text = "";
+
+        }
+
+        private void tbDec_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            string s = ((TextBox) sender).Text;
+            string fText = s + e.Text;
+            e.Handled = int.Parse(fText) > 255;
         }
     }
 }
