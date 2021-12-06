@@ -5,8 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:IP_TranslatorCalculator"
         mc:Ignorable="d"
-        Title="IP-számoló" Height="900" Width="1600" ResizeMode="CanResizeWithGrip" WindowStartupLocation="CenterScreen" MinHeight="600" MinWidth="800">
-    <Grid x:Name="GrMain">
+        Title="IP-számoló" Height="650" Width="970" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+
+    <Grid x:Name="GrMain" Background="#FF264653">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="295*"/>
+            <ColumnDefinition Width="638*"/>
+            <ColumnDefinition Width="37*"/>
+        </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="*"/>
@@ -14,34 +20,29 @@
         </Grid.RowDefinitions>
 
 
-
-
-        <Viewbox Stretch="Uniform">
-            <Grid Grid.Row="0" Background="Gray">
+        <Viewbox Stretch="Uniform" Grid.ColumnSpan="3" Margin="0,0,0,461" Grid.RowSpan="2">
+            <Grid Grid.Row="0" Background="#FF2A9D8F">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="1*"/>
                     <ColumnDefinition Width="1*"/>
                     <ColumnDefinition Width="1*"/>
                 </Grid.ColumnDefinitions>
-                <Button Grid.Column="0"  Margin="25,5,25,5" Style="{StaticResource RoundButtonTemplate}" x:Name="BtnTranslate" Content="IP-v4 átváltó"  FontSize="36" FontWeight="Bold" Click="BtnClick_Translate" Grid.RowSpan="2" ></Button>
-                <Button Grid.Column="1"  Margin="25,5,25,5" Style="{StaticResource RoundButtonTemplate}" x:Name="BtnOptimizer" Content="Hálózat optimalizáló"  FontSize="32" FontWeight="Bold"  Click="BtnClick_Optimizer" Grid.RowSpan="2"/>
-                <Button Grid.Column="2"  Margin="25,5,25,5" Style="{StaticResource RoundButtonTemplate}" x:Name="BtnNwAddress" Content="Hálozati cím számítása"  FontSize="32" FontWeight="Bold" Click="BtnClick_Nw" Grid.RowSpan="2" ></Button>
+                <Button Grid.Column="0"  Margin="25,5,25,5" Style="{StaticResource RoundButtonTemplate}" x:Name="BtnTranslate" Content="IP-v4 átváltó"  FontSize="36" FontWeight="Bold" Click="BtnClick_Translate" Grid.RowSpan="2" Background="#FFE9C46A" ></Button>
+                <Button Grid.Column="1"  Margin="25,5,25,5" Style="{StaticResource RoundButtonTemplate}" x:Name="BtnOptimizer" Content="Hálózat optimalizáló"  FontSize="32" FontWeight="Bold"  Click="BtnClick_Optimizer" Grid.RowSpan="2" Background="#FFE9C46A" />
+                <Button Grid.Column="2"  Margin="25,5,25,5" Style="{StaticResource RoundButtonTemplate}" x:Name="BtnNwAddress" Content="Hálozati cím számítása"  FontSize="32" FontWeight="Bold" Click="BtnClick_Nw" Grid.RowSpan="2" Background="#FFE9C46A" ></Button>
             </Grid>
         </Viewbox>
 
 
 
-
-
-
-        <StackPanel Grid.Row="2" Grid.Column="0" VerticalAlignment="Bottom" >
+        <StackPanel Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" Grid.ColumnSpan="3">
             <Button x:Name="BtnHome" Width="50" HorizontalAlignment="Right" Margin="0,0,20,20" Click="BtnHome_click">
                 <StackPanel>
                     <Image Source="/PngItem_2619202.png"></Image>
                 </StackPanel>
             </Button>
         </StackPanel>
-        <Frame x:Name="Main" NavigationUIVisibility="Hidden" Grid.RowSpan="2" Grid.Row="1"/>
+        <Frame x:Name="Main" NavigationUIVisibility="Hidden" Grid.RowSpan="2" Grid.Row="1" Grid.ColumnSpan="3" Margin="0,2,0,0"/>
 
 
 
