@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "Z:\\2021 - '22\\Prog\\IP-TranslatorCalculator\\IP-TranslatorCalculator.csproj": {}
+    "D:\\things\\Programs\\IP-TranslatorCalculator\\IP-TranslatorCalculator.csproj": {}
   },
   "projects": {
-    "Z:\\2021 - '22\\Prog\\IP-TranslatorCalculator\\IP-TranslatorCalculator.csproj": {
+    "D:\\things\\Programs\\IP-TranslatorCalculator\\IP-TranslatorCalculator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "Z:\\2021 - '22\\Prog\\IP-TranslatorCalculator\\IP-TranslatorCalculator.csproj",
+        "projectUniqueName": "D:\\things\\Programs\\IP-TranslatorCalculator\\IP-TranslatorCalculator.csproj",
         "projectName": "IP-TranslatorCalculator",
-        "projectPath": "Z:\\2021 - '22\\Prog\\IP-TranslatorCalculator\\IP-TranslatorCalculator.csproj",
-        "packagesPath": "C:\\Users\\Fehér.Szabolcs\\.nuget\\packages\\",
-        "outputPath": "Z:\\2021 - '22\\Prog\\IP-TranslatorCalculator\\obj\\",
+        "projectPath": "D:\\things\\Programs\\IP-TranslatorCalculator\\IP-TranslatorCalculator.csproj",
+        "packagesPath": "C:\\Users\\Szabolcs\\.nuget\\packages\\",
+        "outputPath": "D:\\things\\Programs\\IP-TranslatorCalculator\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Fehér.Szabolcs\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Szabolcs\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -58,7 +55,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

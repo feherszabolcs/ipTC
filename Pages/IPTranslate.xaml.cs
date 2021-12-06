@@ -118,9 +118,16 @@ namespace IP_TranslatorCalculator
 
         private void tbDec_PreviewTextInput(object sender, TextCompositionEventArgs e)
         {
+            Regex reg = new Regex("[^0-9]+");
+            e.Handled = reg.IsMatch(e.Text);
             string s = ((TextBox) sender).Text;
             string fText = s + e.Text;
-            e.Handled = int.Parse(fText) > 255;
+            if (!reg.IsMatch(e.Text))
+            {
+                e.Handled = int.Parse(fText) > 255;
+            }
+            else MessageBox.Show("Számot adjon meg!", "Beviteli hiba!", MessageBoxButton.OK, MessageBoxImage.Warning);
+
         }
     }
 }

@@ -28,7 +28,6 @@ namespace IP_TranslatorCalculator
         private void BtnClick_Translate(object sender, RoutedEventArgs e)
         {
             Main.Content = new IPTranslate();
-            //mainP.Visibility = Visibility.Hidden;
         }
 
         private void BtnClick_Optimizer(object sender, RoutedEventArgs e)

@@ -7,21 +7,21 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="IPTranslate.xaml.cs">
+    <Compile Update="Pages\IPTranslate.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="NetworkOptimizer.xaml.cs">
+    <Compile Update="Pages\NetworkOptimizer.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Page Update="IPTranslate.xaml">
+    <Page Update="Pages\IPTranslate.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="MainWindow.xaml">
+    <Page Update="Pages\MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="NetworkOptimizer.xaml">
+    <Page Update="Pages\NetworkOptimizer.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
