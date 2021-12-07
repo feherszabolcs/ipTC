@@ -95,7 +95,7 @@ namespace IP_TranslatorCalculator
             }
             else
             {
-                string output = String.Format($"{Convert.ToString(int.Parse(tb1.Text), 2)}{Convert.ToString(int.Parse(tb2.Text), 2)}{Convert.ToString(int.Parse(tb3.Text), 2)}{Convert.ToString(int.Parse(tb4.Text), 2)}");
+                string output = OctettToBin(tb1.Text) + OctettToBin(tb2.Text) + OctettToBin(tb3.Text) + OctettToBin(tb4.Text);
                 tbOutput.Visibility = (Visibility)0;
                 tbOutput.Text = output;
                 lblOut.Content = "A decimálisan megadott szám bináris formában:";
@@ -103,9 +103,17 @@ namespace IP_TranslatorCalculator
             }
         }
         private string BinToDec(string octett) {
-
-            int r = Convert.ToInt32(octett, 2);            
+            int r = 0;
+            if(octett.Length == 8)
+            {
+                r = Convert.ToInt32(octett, 2);
+            }
+         
             return r.ToString();
+        }
+        private string OctettToBin(string octett)
+        {
+            return Convert.ToString(int.Parse(octett), 2).PadLeft(8, '0');
         }
         private void ResetOutput()
         {
