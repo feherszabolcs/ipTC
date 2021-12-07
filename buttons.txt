@@ -1,3 +1,0 @@
-Button Grid.Column="0" Margin="25,5" Style="{StaticResource RoundButtonTemplate}" x:Name="BtnTranslate" Content="IP-v4 átváltó" FontSize="36" FontWeight="Bold" Click="BtnClick_Translate" ></Button>
-                <Button Grid.Column="1" Margin="25,5" Style="{StaticResource RoundButtonTemplate}" x:Name="BtnOptimizer" Content="Hálózat optimalizáló" FontSize="36" FontWeight="Bold"  Click="BtnClick_Optimizer"/>
-                <Button Grid.Column="2" Margin="25,5" Style="{StaticResource RoundButtonTemplate}" x:Name="BtnNwAddress" Content="Hálozati cím számítása" FontSize="36" FontWeight="Bold" Click="BtnClick_Nw" ></Button>
