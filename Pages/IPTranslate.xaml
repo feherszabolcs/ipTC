@@ -68,11 +68,13 @@
                 <Grid.RowDefinitions>
                     <RowDefinition Height="auto"/>
                     <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
-                <Button Grid.Row="0" Content="Fordítás" Margin="0,5" Name="btnTranslate" HorizontalAlignment="Center" FontSize="30" VerticalAlignment="Bottom" Height="44" Width="160" Click="btnTranslate_Click"/>
-                <TextBox Grid.Row="2"  Margin="0,5" HorizontalAlignment="Center" Name="tbOutput" IsReadOnly="True" Visibility="Hidden" TextWrapping="Wrap"  VerticalAlignment="Bottom" Padding="8" Height="auto" TextAlignment="Center" Width="auto" FontSize="34"/>
-                <Label Grid.Row="1"  Content="" Margin="0,5" HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="auto" FontSize="20" Height="49" Name="lblOut"/>
+                <Button Grid.Row="0" Name="btnOwnIp" Content="Saját IP használata" FontSize="30" Padding="8" Margin="0,5" Click="btnOwnIp_Click"/>
+                <Button Grid.Row="1" Content="Fordítás" Margin="0,5" Name="btnTranslate" HorizontalAlignment="Center" FontSize="30" VerticalAlignment="Bottom" Height="44" Width="160" Click="btnTranslate_Click"/>
+                <TextBox Grid.Row="3"  Margin="0,5" HorizontalAlignment="Center" Name="tbOutput" IsReadOnly="True" Visibility="Hidden" TextWrapping="Wrap"  VerticalAlignment="Bottom" Padding="8" Height="auto" TextAlignment="Center" Width="auto" FontSize="34"/>
+                <Label Grid.Row="2"  Content="" Margin="0,5" HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="auto" FontSize="20" Height="49" Name="lblOut"/>
             </Grid>
         </Viewbox>
         

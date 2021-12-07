@@ -11,6 +11,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Net;
+using System.IO;
 
 namespace IP_TranslatorCalculator
 {
@@ -136,6 +138,40 @@ namespace IP_TranslatorCalculator
             }
             else MessageBox.Show("Számot adjon meg!", "Beviteli hiba!", MessageBoxButton.OK, MessageBoxImage.Warning);
 
+        }
+        private string OwnIP()
+        {
+            Dictionary<string, int> ipList = new Dictionary<string, int>();
+            string UserIpInString = new WebClient().DownloadString("http://icanhazip.com").Replace("\\r\\n", "").Replace("\\n", "").Trim();
+            var UserIP = IPAddress.Parse(UserIpInString);
+
+            //ip-k eltárolása
+            if (ipList.ContainsKey(UserIP.ToString())) ipList[UserIP.ToString()]++;
+            else ipList.Add(UserIP.ToString(), 1);
+
+            List<string> toFile = new List<string>(); toFile.Add("IP cím \t\t Futtatások száma");
+            foreach (var item in ipList)
+            {
+                toFile.Add(String.Format($"{item.Key} \t {item.Value}"));
+            }
+            File.WriteAllLines("ipv4.txt", toFile);
+
+
+            return UserIP.ToString();
+        }
+
+        private void btnOwnIp_Click(object sender, RoutedEventArgs e)
+        {
+            string ip = OwnIP();
+            string[] m = ip.Split('.');
+            if (ChbDec.IsChecked == true)
+            {
+                tb1.Text = m[0]; tb2.Text = m[1]; tb3.Text = m[2]; tb4.Text = m[3];
+            }
+            else
+            {
+                TbBinform.Text = OctettToBin(m[0]) + OctettToBin(m[1]) + OctettToBin(m[2]) + OctettToBin(m[3]);
+            }
         }
     }
 }

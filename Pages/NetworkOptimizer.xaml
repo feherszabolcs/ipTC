@@ -6,8 +6,8 @@
       xmlns:local="clr-namespace:IP_TranslatorCalculator"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="NetworkOptimizer">
-
+      Title="Hálózati címzés">
+ <!--Alhálózati maszk átváltás '/' formából/ba, hálózati cím számítás maszk alapján, eszközök száma a hálózatban-->
     <Grid>
         
     </Grid>

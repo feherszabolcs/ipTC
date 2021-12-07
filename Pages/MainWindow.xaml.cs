@@ -37,7 +37,7 @@ namespace IP_TranslatorCalculator
 
         private void BtnClick_Nw(object sender, RoutedEventArgs e)
         {
-            Main.Content = new NetworkOptimizer();
+            Main.Content = new MainWindow();
         }
         private void BtnHome_click(object sender, RoutedEventArgs e)
         {
