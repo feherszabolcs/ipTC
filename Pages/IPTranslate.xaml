@@ -6,6 +6,7 @@
       xmlns:local="clr-namespace:IP_TranslatorCalculator"
       mc:Ignorable="d" 
       d:DesignHeight="900" d:DesignWidth="1600"
+      MinHeight="700" MinWidth="1200" 
       Title="IPTranslate" Loaded="Page_Loaded">
 
     <Grid Background="Gray" Margin="0,0,0,0">
@@ -53,17 +54,20 @@
         </Viewbox>
 
         <!--Home Gomb-->
-        <StackPanel VerticalAlignment="Bottom" Grid.Row="2" Grid.Column="1" Height="53" HorizontalAlignment="Right">
-            <Button x:Name="BtnHome" Width="50" HorizontalAlignment="Right" Margin="0,0,20,20" Click="BtnHome_click" >
-                <StackPanel>
-                    <Image Source="/PngItem_2619202.png"></Image>
-                </StackPanel>
-            </Button>
-        </StackPanel>
+        <Viewbox VerticalAlignment="Bottom" Grid.Row="2" Grid.Column="2" Height="53" HorizontalAlignment="Right">
+            <StackPanel>
+                <Button x:Name="BtnHome" Width="50" HorizontalAlignment="Right" Margin="0,0,20,20" Click="BtnHome_click" >
+                    <StackPanel>
+                        <Image Source="/PngItem_2619202.png"></Image>
+                    </StackPanel>
+                </Button>
+            </StackPanel>
+        </Viewbox>
+        
 
         
         <!--Output-->
-        <Viewbox Grid.Row="2" Grid.ColumnSpan="2">
+        <Viewbox Grid.Row="2" Grid.ColumnSpan="2" Stretch="Uniform" Margin="0,0,0,20">
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="auto"/>

@@ -13,6 +13,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Net;
 using System.IO;
+using System.ComponentModel;
 
 namespace IP_TranslatorCalculator
 {
@@ -40,7 +41,6 @@ namespace IP_TranslatorCalculator
             TbBinform.Visibility = Visibility.Hidden;
             ResetOutput();
         }
-
         private void ChbBin_Checked(object sender, RoutedEventArgs e)
         {
             if (ChbDec.IsChecked == true) {

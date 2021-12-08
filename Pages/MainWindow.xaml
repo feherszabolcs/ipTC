@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:IP_TranslatorCalculator"
         mc:Ignorable="d"
-        Title="IP-számoló" MinHeight="650" MinWidth="970" WindowStartupLocation="CenterScreen">
+        Title="IP-számoló" MinHeight="800" MinWidth="400" Width="450" SizeChanged="Window_SizeChanged" WindowStartupLocation="CenterScreen">
 
     <Grid x:Name="GrMain" Background="#FF264653">
         <Grid.ColumnDefinitions>
@@ -22,7 +22,7 @@
   
         
         <!--TODO:
-        onhover effekt a gombokon, végleges elrendezés, home gomb kiszedése, hálózat optimalizáló helyett más kitalálása
+        onhover effekt a gombokon, végleges elrendezés, home gomb kiszedése, hálózat optimalizáló helyett más kitalálása(Settings)
         -->
        
         <Viewbox Stretch="Uniform" Grid.ColumnSpan="3" Margin="0,10,0,0" VerticalAlignment="Top">
