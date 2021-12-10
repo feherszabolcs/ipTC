@@ -5,45 +5,46 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:IP_TranslatorCalculator"
       mc:Ignorable="d" 
-      d:DesignHeight="900" d:DesignWidth="1600"
-      MinHeight="700" MinWidth="1200" 
+      d:DesignHeight="800" d:DesignWidth="650"
+      MinHeight="800" MinWidth="650"
       Title="IPTranslate" Loaded="Page_Loaded">
 
-    <Grid Background="Gray" Margin="0,0,0,0">
+    <Grid Background="#FF264653" Margin="-16,0,0,0">
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="5*"/>
+            <RowDefinition Height="auto"/>
             <RowDefinition Height="2*"/>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
 
         <!--Decimális input-->
-        <Viewbox Grid.Row="1" Grid.Column="0" VerticalAlignment="Top">
+        <Viewbox Grid.Row="1" Grid.ColumnSpan="2" VerticalAlignment="Top" Margin="50,30">
             <Grid>
 
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="auto"/>
                 </Grid.ColumnDefinitions>
 
-                <TextBox Grid.Column="0" Margin="10,0" Height="80" HorizontalAlignment="Left" Visibility="Hidden" Width="300" VerticalAlignment="Top" FontSize="34" FontWeight="Bold" PreviewTextInput="tbDec_PreviewTextInput" Name="tb1" MaxLength="3" />
+                <TextBox Grid.Column="0" Margin="0,0,10,0" Height="80" HorizontalAlignment="Left" Visibility="Hidden" Width="300" VerticalAlignment="Top" FontSize="34" FontWeight="Bold" PreviewTextInput="tbDec_PreviewTextInput" Name="tb1" MaxLength="3" />
                 <TextBox Grid.Column="1" Margin="10,0" Height="80" HorizontalAlignment="Left" Visibility="Hidden" Width="300" VerticalAlignment="Top" FontSize="34" FontWeight="Bold" PreviewTextInput="tbDec_PreviewTextInput" Name="tb2"  MaxLength="3"/>
                 <TextBox Grid.Column="2" Margin="10,0" Height="80" HorizontalAlignment="Left" Visibility="Hidden" Width="300" VerticalAlignment="Top" FontSize="34" FontWeight="Bold" PreviewTextInput="tbDec_PreviewTextInput" Name="tb3"  MaxLength="3"/>
-                <TextBox Grid.Column="3" Margin="10,0" Height="80" HorizontalAlignment="Left" Visibility="Hidden" Width="300" VerticalAlignment="Top" FontSize="34" FontWeight="Bold" PreviewTextInput="tbDec_PreviewTextInput" Name="tb4"  MaxLength="3"/>
+                <TextBox Grid.Column="3" Margin="10,0,0,0" Height="80" HorizontalAlignment="Left" Visibility="Hidden" Width="300" VerticalAlignment="Top" FontSize="34" FontWeight="Bold" PreviewTextInput="tbDec_PreviewTextInput" Name="tb4"  MaxLength="3"/>
             </Grid>
         </Viewbox>
 
 
-        <CheckBox Grid.Column="0" x:Name="ChbDec" Content="Decimális" Height="36" FontSize="24" Checked="ChbDec_Checked" HorizontalAlignment="Center" Width="220" FontWeight="Bold"/>
-        <CheckBox Grid.Column="1" x:Name="ChbBin" Content="Bináris" HorizontalAlignment="Center" Height="36" FontSize="24" FontWeight="Bold" Checked="ChbBin_Checked"/>
+        <CheckBox Grid.Column="0" x:Name="ChbDec" Content="Decimális" Height="auto" FontSize="40" Checked="ChbDec_Checked" HorizontalAlignment="Center" Width="220" FontWeight="Bold" Margin="25"/>
+        <CheckBox Grid.Column="1" x:Name="ChbBin" Content="Bináris" HorizontalAlignment="Center" Height="auto" FontSize="40" FontWeight="Bold" Checked="ChbBin_Checked" Margin="25"/>
 
         <!--Bináris input-->
-        <Viewbox Grid.Row="1" Grid.Column="1" VerticalAlignment="Top">
+        <Viewbox Grid.Row="1" Grid.ColumnSpan="2" VerticalAlignment="Top" Margin="50,30">
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="auto"/>
@@ -54,11 +55,11 @@
         </Viewbox>
 
         <!--Home Gomb-->
-        <Viewbox VerticalAlignment="Bottom" Grid.Row="2" Grid.Column="2" Height="53" HorizontalAlignment="Right">
+        <Viewbox VerticalAlignment="Bottom" Grid.Row="3" Grid.ColumnSpan="2" Height="53" HorizontalAlignment="Center" Margin="0,0,0,190">
             <StackPanel>
-                <Button x:Name="BtnHome" Width="50" HorizontalAlignment="Right" Margin="0,0,20,20" Click="BtnHome_click" >
+                <Button x:Name="BtnHome" Width="auto" HorizontalAlignment="Right" Margin="0,0,20,20" Click="BtnHome_click" Background="{x:Null}" >
                     <StackPanel>
-                        <Image Source="/PngItem_2619202.png"></Image>
+                        <Image Source="/PngItem_2619202.png"/>
                     </StackPanel>
                 </Button>
             </StackPanel>
@@ -67,7 +68,7 @@
 
         
         <!--Output-->
-        <Viewbox Grid.Row="2" Grid.ColumnSpan="2" Stretch="Uniform" Margin="0,0,0,20">
+        <Viewbox Grid.Row="2" Grid.ColumnSpan="2" Stretch="Uniform" Margin="40,20" HorizontalAlignment="Center">
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="auto"/>
@@ -75,9 +76,9 @@
                     <RowDefinition Height="auto"/>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
-                <Button Grid.Row="0" Name="btnOwnIp" Content="Saját IP használata" FontSize="30" Padding="8" Margin="0,5" Click="btnOwnIp_Click"/>
-                <Button Grid.Row="1" Content="Fordítás" Margin="0,5" Name="btnTranslate" HorizontalAlignment="Center" FontSize="30" VerticalAlignment="Bottom" Height="44" Width="160" Click="btnTranslate_Click"/>
-                <TextBox Grid.Row="3"  Margin="0,5" HorizontalAlignment="Center" Name="tbOutput" IsReadOnly="True" Visibility="Hidden" TextWrapping="Wrap"  VerticalAlignment="Bottom" Padding="8" Height="auto" TextAlignment="Center" Width="auto" FontSize="34"/>
+                <Button Grid.Row="0" Name="btnOwnIp" Content="Saját IP használata"  Style="{StaticResource RoundButtonTemplate}" FontSize="30" Padding="8" Margin="0,5" Click="btnOwnIp_Click" Background="#FFF4A261" Foreground="White" Width="300"/>
+                <Button Grid.Row="1" Content="Fordítás"  Style="{StaticResource RoundButtonTemplate}" Margin="0,5" Name="btnTranslate" HorizontalAlignment="Center" FontSize="30" VerticalAlignment="Bottom" Height="44" Width="160" Click="btnTranslate_Click" Background="#FFF4A261" Foreground="White"/>
+                <TextBox Grid.Row="3"  Margin="0,5" HorizontalAlignment="Center" Name="tbOutput" IsReadOnly="True" Visibility="Hidden" TextWrapping="Wrap"  VerticalAlignment="Bottom" Padding="8" Height="auto" TextAlignment="Center" Width="610" HorizontalContentAlignment="Center" FontSize="34"/>
                 <Label Grid.Row="2"  Content="" Margin="0,5" HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="auto" FontSize="20" Height="49" Name="lblOut"/>
             </Grid>
         </Viewbox>
