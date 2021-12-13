@@ -28,10 +28,10 @@ namespace IP_TranslatorCalculator
         private void BtnClick_Translate(object sender, RoutedEventArgs e)
         {
             Main.Content = new IPTranslate();
-            Application.Current.MainWindow.Width = 1600;
-            Application.Current.MainWindow.Height = 900;
-            Application.Current.MainWindow.MinHeight = 850;
-            Application.Current.MainWindow.MinWidth = 1300;
+            Application.Current.MainWindow.Width = 650;
+            Application.Current.MainWindow.Height = 800;
+            Application.Current.MainWindow.MinHeight = 800;
+            Application.Current.MainWindow.MinWidth = 650;
         }
 
         private void BtnClick_Optimizer(object sender, RoutedEventArgs e)

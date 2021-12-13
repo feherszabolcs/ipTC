@@ -72,3 +72,28 @@ C:\Users\Balázsi Edina\Desktop\ipTC\obj\Debug\netcoreapp3.1\IP-TranslatorCalcul
 C:\Users\Balázsi Edina\Desktop\ipTC\obj\Debug\netcoreapp3.1\IP-TranslatorCalculator.dll
 C:\Users\Balázsi Edina\Desktop\ipTC\obj\Debug\netcoreapp3.1\IP-TranslatorCalculator.pdb
 C:\Users\Balázsi Edina\Desktop\ipTC\obj\Debug\netcoreapp3.1\IP-TranslatorCalculator.genruntimeconfig.cache
+C:\Users\Balázsi.Bálint\Desktop\ipTC\ipTC\bin\Debug\netcoreapp3.1\IP-TranslatorCalculator.exe
+C:\Users\Balázsi.Bálint\Desktop\ipTC\ipTC\bin\Debug\netcoreapp3.1\IP-TranslatorCalculator.deps.json
+C:\Users\Balázsi.Bálint\Desktop\ipTC\ipTC\bin\Debug\netcoreapp3.1\IP-TranslatorCalculator.runtimeconfig.json
+C:\Users\Balázsi.Bálint\Desktop\ipTC\ipTC\bin\Debug\netcoreapp3.1\IP-TranslatorCalculator.runtimeconfig.dev.json
+C:\Users\Balázsi.Bálint\Desktop\ipTC\ipTC\bin\Debug\netcoreapp3.1\IP-TranslatorCalculator.dll
+C:\Users\Balázsi.Bálint\Desktop\ipTC\ipTC\bin\Debug\netcoreapp3.1\IP-TranslatorCalculator.pdb
+C:\Users\Balázsi.Bálint\Desktop\ipTC\ipTC\obj\Debug\netcoreapp3.1\IP-TranslatorCalculator.csproj.AssemblyReference.cache
+C:\Users\Balázsi.Bálint\Desktop\ipTC\ipTC\obj\Debug\netcoreapp3.1\Pages\IPTranslate.g.cs
+C:\Users\Balázsi.Bálint\Desktop\ipTC\ipTC\obj\Debug\netcoreapp3.1\Pages\MainWindow.g.cs
+C:\Users\Balázsi.Bálint\Desktop\ipTC\ipTC\obj\Debug\netcoreapp3.1\Pages\NetworkOptimizer.g.cs
+C:\Users\Balázsi.Bálint\Desktop\ipTC\ipTC\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\Balázsi.Bálint\Desktop\ipTC\ipTC\obj\Debug\netcoreapp3.1\IP-TranslatorCalculator_MarkupCompile.cache
+C:\Users\Balázsi.Bálint\Desktop\ipTC\ipTC\obj\Debug\netcoreapp3.1\IP-TranslatorCalculator_MarkupCompile.lref
+C:\Users\Balázsi.Bálint\Desktop\ipTC\ipTC\obj\Debug\netcoreapp3.1\App.baml
+C:\Users\Balázsi.Bálint\Desktop\ipTC\ipTC\obj\Debug\netcoreapp3.1\Pages\IPTranslate.baml
+C:\Users\Balázsi.Bálint\Desktop\ipTC\ipTC\obj\Debug\netcoreapp3.1\Pages\MainWindow.baml
+C:\Users\Balázsi.Bálint\Desktop\ipTC\ipTC\obj\Debug\netcoreapp3.1\Pages\NetworkOptimizer.baml
+C:\Users\Balázsi.Bálint\Desktop\ipTC\ipTC\obj\Debug\netcoreapp3.1\IP-TranslatorCalculator.g.resources
+C:\Users\Balázsi.Bálint\Desktop\ipTC\ipTC\obj\Debug\netcoreapp3.1\IP-TranslatorCalculator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Balázsi.Bálint\Desktop\ipTC\ipTC\obj\Debug\netcoreapp3.1\IP-TranslatorCalculator.AssemblyInfoInputs.cache
+C:\Users\Balázsi.Bálint\Desktop\ipTC\ipTC\obj\Debug\netcoreapp3.1\IP-TranslatorCalculator.AssemblyInfo.cs
+C:\Users\Balázsi.Bálint\Desktop\ipTC\ipTC\obj\Debug\netcoreapp3.1\IP-TranslatorCalculator.csproj.CoreCompileInputs.cache
+C:\Users\Balázsi.Bálint\Desktop\ipTC\ipTC\obj\Debug\netcoreapp3.1\IP-TranslatorCalculator.dll
+C:\Users\Balázsi.Bálint\Desktop\ipTC\ipTC\obj\Debug\netcoreapp3.1\IP-TranslatorCalculator.pdb
+C:\Users\Balázsi.Bálint\Desktop\ipTC\ipTC\obj\Debug\netcoreapp3.1\IP-TranslatorCalculator.genruntimeconfig.cache
