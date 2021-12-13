@@ -97,3 +97,5 @@ C:\Users\Balázsi.Bálint\Desktop\ipTC\ipTC\obj\Debug\netcoreapp3.1\IP-Translato
 C:\Users\Balázsi.Bálint\Desktop\ipTC\ipTC\obj\Debug\netcoreapp3.1\IP-TranslatorCalculator.dll
 C:\Users\Balázsi.Bálint\Desktop\ipTC\ipTC\obj\Debug\netcoreapp3.1\IP-TranslatorCalculator.pdb
 C:\Users\Balázsi.Bálint\Desktop\ipTC\ipTC\obj\Debug\netcoreapp3.1\IP-TranslatorCalculator.genruntimeconfig.cache
+D:\things\Programs\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\Pages\HomePage.g.cs
+D:\things\Programs\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\Pages\HomePage.baml

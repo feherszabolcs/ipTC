@@ -13,6 +13,9 @@
     <Compile Update="Pages\NetworkOptimizer.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Pages\HomePage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="Pages\IPTranslate.xaml">
@@ -22,6 +25,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Pages\NetworkOptimizer.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\HomePage.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

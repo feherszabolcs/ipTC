@@ -15,7 +15,7 @@ using System.Net;
 using System.IO;
 using System.ComponentModel;
 
-namespace IP_TranslatorCalculator
+namespace IP_TranslatorCalculator.Pages
 {
     /// <summary>
     /// Interaction logic for IPTranslate.xaml
@@ -63,9 +63,10 @@ namespace IP_TranslatorCalculator
 
         private void BtnHome_click(object sender, RoutedEventArgs e)
         {
-            Application.Current.MainWindow = new MainWindow();
-            Application.Current.MainWindow.Show();
-            Window.GetWindow(this).Close();
+            Application.Current.MainWindow.Width = 650;
+            Application.Current.MainWindow.Height = 830;
+            NavigationService.Navigate(new Pages.Page1());
+            Application.Current.MainWindow.ResizeMode = ResizeMode.NoResize;
         }
 
         private void TbBinform_PreviewTextInput(object sender, TextCompositionEventArgs e)

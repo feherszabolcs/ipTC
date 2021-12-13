@@ -25,38 +25,10 @@ namespace IP_TranslatorCalculator
             InitializeComponent();
         }
 
-        private void BtnClick_Translate(object sender, RoutedEventArgs e)
-        {
-            Main.Content = new IPTranslate();
-            Application.Current.MainWindow.Width = 650;
-            Application.Current.MainWindow.Height = 800;
-            Application.Current.MainWindow.MinHeight = 800;
-            Application.Current.MainWindow.MinWidth = 650;
-        }
-
-        private void BtnClick_Optimizer(object sender, RoutedEventArgs e)
-        {
-            Main.Content = new NetworkOptimizer();
-        }       
-
-        private void BtnClick_Nw(object sender, RoutedEventArgs e)
-        {
-            Main.Content = new MainWindow();
-        }
-        private void BtnHome_click(object sender, RoutedEventArgs e)
-        {
-            Application.Current.MainWindow = new MainWindow();
-            Application.Current.MainWindow.Show();
-            Window.GetWindow(this).Close();
-        }
-
-
-        //MINDEN átméreteződés után az új megnyitott ablak középen, az uj megnyitott ablak méretétől függetlentül
-
         private void Window_SizeChanged(object sender, SizeChangedEventArgs e)
         {
             double screenWidth = SystemParameters.PrimaryScreenWidth;
-            double screenHeight =SystemParameters.PrimaryScreenHeight;
+            double screenHeight = SystemParameters.PrimaryScreenHeight;
             double windowWidth = this.Width;
             double windowHeight = this.Height;
             this.Left = (screenWidth / 2) - (windowWidth / 2);
