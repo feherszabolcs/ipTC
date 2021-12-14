@@ -11,7 +11,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace IP_TranslatorCalculator
+namespace IP_TranslatorCalculator.Pages
 {
     /// <summary>
     /// Interaction logic for NetworkOptimizer.xaml
@@ -21,6 +21,13 @@ namespace IP_TranslatorCalculator
         public NetworkOptimizer()
         {
             InitializeComponent();
+        }
+        private void BtnHome_click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.MainWindow.Width = 650;
+            Application.Current.MainWindow.Height = 830;
+            NavigationService.Navigate(new Pages.Page1());
+            Application.Current.MainWindow.ResizeMode = ResizeMode.NoResize;
         }
     }
 }

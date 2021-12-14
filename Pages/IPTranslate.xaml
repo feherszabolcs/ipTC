@@ -52,7 +52,7 @@
         </Viewbox>
 
         <!--Home Gomb-->
-        <Viewbox VerticalAlignment="Bottom" Grid.Row="3" Grid.ColumnSpan="2" Height="53" HorizontalAlignment="Center" Margin="0,0,0,190">
+        <Viewbox VerticalAlignment="Bottom" Grid.Row="3" Grid.ColumnSpan="2" Height="53" HorizontalAlignment="Center" Margin="0,0,0,150">
             <StackPanel>
                 <Button BorderBrush="{x:Null}" x:Name="BtnHome" Width="auto" HorizontalAlignment="Right" Margin="0,0,20,20" Click="BtnHome_click" Background="{x:Null}" >
                     <StackPanel>

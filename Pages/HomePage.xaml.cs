@@ -22,19 +22,25 @@ namespace IP_TranslatorCalculator.Pages
         {
             InitializeComponent();
         }
-        private void BtnClick_Translate(object sender, RoutedEventArgs e)
+        private void ContentChange()
         {
-            NavigationService.Navigate(new Pages.IPTranslate());
             Application.Current.MainWindow.ResizeMode = ResizeMode.CanResize;
             Application.Current.MainWindow.Width = 650;
             Application.Current.MainWindow.Height = 830;
             Application.Current.MainWindow.MinHeight = 830;
             Application.Current.MainWindow.MinWidth = 650;
+
+        }
+        private void BtnClick_Translate(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Pages.IPTranslate());
+            ContentChange();
         }
 
         private void BtnClick_Optimizer(object sender, RoutedEventArgs e)
         {
-            //Main.Content = new NetworkOptimizer();
+            NavigationService.Navigate(new Pages.NetworkOptimizer());
+            ContentChange();
         }
 
         private void BtnClick_Nw(object sender, RoutedEventArgs e)

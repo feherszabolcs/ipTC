@@ -25,7 +25,7 @@ namespace IP_TranslatorCalculator
             InitializeComponent();
         }
 
-        private void Window_SizeChanged(object sender, SizeChangedEventArgs e)
+        private void Window_SizeChanged(object sender, SizeChangedEventArgs e) //Nincs használva jelenleg
         {
             double screenWidth = SystemParameters.PrimaryScreenWidth;
             double screenHeight = SystemParameters.PrimaryScreenHeight;
@@ -33,6 +33,6 @@ namespace IP_TranslatorCalculator
             double windowHeight = this.Height;
             this.Left = (screenWidth / 2) - (windowWidth / 2);
             this.Top = (screenHeight / 2) - (windowHeight / 2);
-        }
+        }       
     }
 }

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:IP_TranslatorCalculator"
         mc:Ignorable="d"
-        Title="IP-számoló" MinHeight="800" MinWidth="550" MaxWidth="900" MaxHeight="1000"  Width="650" Height="830" SizeChanged="Window_SizeChanged" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+        Title="IP-számoló" MinHeight="800" MinWidth="550" MaxWidth="900" MaxHeight="1000"  Width="650" Height="830"  WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
 
     <Grid>
         <!--Content változtatása: NavigationService.Navigate(new -PageNeve-) pl: new Pages.Page1
