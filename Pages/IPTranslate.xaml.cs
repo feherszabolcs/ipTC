@@ -64,7 +64,7 @@ namespace IP_TranslatorCalculator.Pages
         private void BtnHome_click(object sender, RoutedEventArgs e)
         {
             Application.Current.MainWindow.Width = 650;
-            Application.Current.MainWindow.Height = 830;
+            Application.Current.MainWindow.Height = 800;
             NavigationService.Navigate(new Pages.Page1());
             Application.Current.MainWindow.ResizeMode = ResizeMode.NoResize;
         }

@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\things\\Programs\\IP-TranslatorCalculator\\IP-TranslatorCalculator.csproj": {}
+    "C:\\Users\\Fehér.Szabolcs\\Desktop\\ipTC-main\\ipTC\\IP-TranslatorCalculator.csproj": {}
   },
   "projects": {
-    "D:\\things\\Programs\\IP-TranslatorCalculator\\IP-TranslatorCalculator.csproj": {
+    "C:\\Users\\Fehér.Szabolcs\\Desktop\\ipTC-main\\ipTC\\IP-TranslatorCalculator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\things\\Programs\\IP-TranslatorCalculator\\IP-TranslatorCalculator.csproj",
+        "projectUniqueName": "C:\\Users\\Fehér.Szabolcs\\Desktop\\ipTC-main\\ipTC\\IP-TranslatorCalculator.csproj",
         "projectName": "IP-TranslatorCalculator",
-        "projectPath": "D:\\things\\Programs\\IP-TranslatorCalculator\\IP-TranslatorCalculator.csproj",
-        "packagesPath": "C:\\Users\\Szabolcs\\.nuget\\packages\\",
-        "outputPath": "D:\\things\\Programs\\IP-TranslatorCalculator\\obj\\",
+        "projectPath": "C:\\Users\\Fehér.Szabolcs\\Desktop\\ipTC-main\\ipTC\\IP-TranslatorCalculator.csproj",
+        "packagesPath": "C:\\Users\\Fehér.Szabolcs\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Fehér.Szabolcs\\Desktop\\ipTC-main\\ipTC\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Szabolcs\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Fehér.Szabolcs\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -55,7 +58,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

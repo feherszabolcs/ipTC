@@ -26,8 +26,8 @@ namespace IP_TranslatorCalculator.Pages
         {
             Application.Current.MainWindow.ResizeMode = ResizeMode.CanResize;
             Application.Current.MainWindow.Width = 650;
-            Application.Current.MainWindow.Height = 830;
-            Application.Current.MainWindow.MinHeight = 830;
+            Application.Current.MainWindow.Height = 800;
+            Application.Current.MainWindow.MinHeight = 800;
             Application.Current.MainWindow.MinWidth = 650;
 
         }
