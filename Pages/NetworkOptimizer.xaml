@@ -32,9 +32,9 @@
 
                 <Label Content="IP-v4 cím" FontSize="20" HorizontalAlignment="Center" Height="auto" Grid.ColumnSpan="3" FontWeight="Bold"/>
 
-                <TextBox Grid.Column="0" Grid.Row="1" Width="300" Height="auto" FontSize="30" HorizontalAlignment="Right"/>
+                <TextBox Name="tbIpAddress" Grid.Column="0" Grid.Row="1" Width="300" Height="auto" FontSize="30" HorizontalAlignment="Right" PreviewTextInput="tbIP_PreviewTextInput"/>
                 <Label Content="/" Grid.Row="1" Grid.Column="1" FontSize="20" Height="auto"/>
-                <TextBox Grid.Row="1" Grid.Column="2" Width="40" MaxLength="2" FontSize="30"/>
+                <TextBox x:Name="tbMask" Grid.Row="1" Grid.Column="2" Width="40" MaxLength="2" Text="24" FontSize="30" />
             </Grid>
         </Viewbox>
 
@@ -48,8 +48,8 @@
                     <RowDefinition Height="auto"/>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
-                <Button Grid.Row="0" Name="btnOwnIp" Content="Saját IP használata"  Style="{StaticResource RoundButtonTemplate}" FontSize="30" Padding="8" Margin="0,5" Background="#FFF4A261" Foreground="White" Width="300"/>
-                <Button Grid.Row="1" Content="Számítás"  Style="{StaticResource RoundButtonTemplate}" Margin="0,5" Name="btnTranslate" HorizontalAlignment="Center" FontSize="30" VerticalAlignment="Bottom" Height="44" Width="160" Background="#FFF4A261" Foreground="White"/>
+                <Button x:Name="btnUseOwnIP" Grid.Row="0" Content="Saját IP használata"  Style="{StaticResource RoundButtonTemplate}" FontSize="30" Padding="8" Margin="0,5" Background="#FFF4A261" Foreground="White" Width="300" Click="btnUseOwnIP_Click"/>
+                <Button Grid.Row="1" Content="Számítás"  Style="{StaticResource RoundButtonTemplate}" Margin="0,5" Name="btnCalculate" HorizontalAlignment="Center" FontSize="30" VerticalAlignment="Bottom" Height="44" Width="160" Click="btnCalculate_Click" Background="#FFF4A261" Foreground="White"/>
             </Grid>
         </Viewbox>
 
@@ -66,11 +66,11 @@
                     <RowDefinition Height="38*"/>
                 </Grid.RowDefinitions>
 
-                <Label Grid.Column="0" Content="Eszközök száma" VerticalAlignment="Center" Height="26"/>
+                <Label Grid.Column="0" Content="Maximális&#x0a;eszközök száma" VerticalAlignment="Center" Height="40"/>
                 <Label Grid.Row="1" Grid.Column="0" Content="Hálózati cím" VerticalAlignment="Center" Height="26"/>
                 <Label Grid.Row="2" Grid.Column="0" Content="Szórási cím" VerticalAlignment="Center" Height="26"/>
 
-                <TextBox Grid.Row="0" Grid.Column="1" IsReadOnly="False" Width="30" Margin="10,10,0,10" HorizontalAlignment="Left"/>
+                <TextBox x:Name="tbDevCount" Grid.Row="0" Grid.Column="1" IsReadOnly="True" Width="50" Margin="10,10,0,10" HorizontalAlignment="Left" GotFocus="tbDevCount_GotFocus" MaxLength="5"/>
                 <TextBox Grid.Row="1" Grid.Column="1" IsReadOnly="True" Width="150" Margin="10"/>
                 <TextBox Grid.Row="2" Grid.Column="1" IsReadOnly="True" Width="150" Margin="10"/>
             </Grid>

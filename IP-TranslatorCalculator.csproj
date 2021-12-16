@@ -15,8 +15,4 @@
     <Resource Include="PngItem_2619202.png" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="BackEnd\" />
-  </ItemGroup>
-
 </Project>

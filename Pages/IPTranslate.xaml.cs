@@ -14,6 +14,7 @@ using System.Windows.Shapes;
 using System.Net;
 using System.IO;
 using System.ComponentModel;
+using IP_TranslatorCalculator.BackEnd;
 
 namespace IP_TranslatorCalculator.Pages
 {
@@ -114,7 +115,7 @@ namespace IP_TranslatorCalculator.Pages
          
             return r.ToString();
         }
-        private string OctettToBin(string octett)
+        public string OctettToBin(string octett)
         {
             return Convert.ToString(int.Parse(octett), 2).PadLeft(8, '0');
         }
@@ -140,30 +141,11 @@ namespace IP_TranslatorCalculator.Pages
             else MessageBox.Show("Számot adjon meg!", "Beviteli hiba!", MessageBoxButton.OK, MessageBoxImage.Warning);
 
         }
-        private string OwnIP()
-        {
-            Dictionary<string, int> ipList = new Dictionary<string, int>();
-            string UserIpInString = new WebClient().DownloadString("http://icanhazip.com").Replace("\\r\\n", "").Replace("\\n", "").Trim();
-            var UserIP = IPAddress.Parse(UserIpInString);
-
-            //ip-k eltárolása
-            if (ipList.ContainsKey(UserIP.ToString())) ipList[UserIP.ToString()]++;
-            else ipList.Add(UserIP.ToString(), 1);
-
-            List<string> toFile = new List<string>(); toFile.Add("IP cím \t\t Futtatások száma");
-            foreach (var item in ipList)
-            {
-                toFile.Add(String.Format($"{item.Key} \t {item.Value}"));
-            }
-            File.WriteAllLines("ipv4.txt", toFile);
-
-
-            return UserIP.ToString();
-        }
+        static PublicIP p = new PublicIP();
 
         private void btnOwnIp_Click(object sender, RoutedEventArgs e)
         {
-            string ip = OwnIP();
+            string ip = p.StoreIP().ToString();
             string[] m = ip.Split('.');
             if (ChbDec.IsChecked == true)
             {
