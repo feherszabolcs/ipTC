@@ -133,6 +133,7 @@ namespace IP_TranslatorCalculator.Pages
 
         }
 
+
         private void tbDec_PreviewTextInput(object sender, TextCompositionEventArgs e)
         {
             Regex reg = new Regex("[^0-9]+");

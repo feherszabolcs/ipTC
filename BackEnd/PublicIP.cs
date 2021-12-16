@@ -29,7 +29,7 @@ namespace IP_TranslatorCalculator.BackEnd
             NetworkOptimizer nw = new NetworkOptimizer();
             IPTranslate it = new IPTranslate();
 
-            string[] m = ip.Split('.'); //IP binárisba
+            string[] m = ip.Split('.');
             string ipInBin = it.OctettToBin(m[0]) + it.OctettToBin(m[1]) + it.OctettToBin(m[2]) + it.OctettToBin(m[3]);
 
             int host = int.Parse(mask);
@@ -42,9 +42,9 @@ namespace IP_TranslatorCalculator.BackEnd
            
             return maxhosts.ToString();
         }
-        public Brush FromHex(string hex)
+        public Brush FromHex(string hex) //Szín beállítására
         {
-            var c = new System.Windows.Media.BrushConverter();
+            var c = new BrushConverter();
             return (Brush)c.ConvertFromString(hex);
         }
 

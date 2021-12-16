@@ -50,15 +50,15 @@ namespace IP_TranslatorCalculator.Pages
             tbIpAddress.Text = p.StoreIP().ToString();
         }
 
-        private void tbDevCount_GotFocus(object sender, RoutedEventArgs e)
-        {
-            if(tbDevCount.Text == "") MessageBox.Show("Egy jó tanács: Gondoljon a hálózat bővíthetőségére.", "Tipp.", MessageBoxButton.OK, MessageBoxImage.Information);
-
-        }
-
         private void btnCalculate_Click(object sender, RoutedEventArgs e)
         {
-           
+            tbDevCount.Text = p.CalculateMaxHost(tbIpAddress.Text, tbMask.Text);
         }
+
+        private void Page_Loaded(object sender, RoutedEventArgs e)
+        {
+            btnCalculate.IsEnabled = false;
+        }
+
     }
 }

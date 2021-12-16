@@ -7,7 +7,8 @@
       mc:Ignorable="d" 
       d:DesignHeight="800" d:DesignWidth="650"
       MinHeight="800" MinWidth="650"
-      Title="Hálózati címzés">
+      Title="Hálózati címzés"
+      Loaded="Page_Loaded">
     <!--Alhálózati maszk átváltás '/' formából/ba, hálózati cím számítás maszk alapján, eszközök száma a hálózatban-->
     <Grid>
         <Grid.RowDefinitions>
@@ -32,7 +33,7 @@
 
                 <Label Content="IP-v4 cím" FontSize="20" HorizontalAlignment="Center" Height="auto" Grid.ColumnSpan="3" FontWeight="Bold"/>
 
-                <TextBox Name="tbIpAddress" Grid.Column="0" Grid.Row="1" Width="300" Height="auto" FontSize="30" HorizontalAlignment="Right" PreviewTextInput="tbIP_PreviewTextInput"/>
+                <TextBox Name="tbIpAddress" Grid.Column="0" Grid.Row="1" Width="300" Height="auto" FontSize="30" HorizontalAlignment="Right" PreviewTextInput="tbIP_PreviewTextInput" LostFocus="tbIpAddress_LostFocus"/>
                 <Label Content="/" Grid.Row="1" Grid.Column="1" FontSize="20" Height="auto"/>
                 <TextBox x:Name="tbMask" Grid.Row="1" Grid.Column="2" Width="40" MaxLength="2" Text="24" FontSize="30" />
             </Grid>
