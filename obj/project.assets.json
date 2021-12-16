@@ -8,24 +8,25 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\Fehér.Szabolcs\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Balázsi.Bálint\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "Z:\\2021 - '22\\Prog\\IP-TranslatorCalculator\\IP-TranslatorCalculator.csproj",
+      "projectUniqueName": "C:\\Users\\Balázsi.Bálint\\Desktop\\ipTC\\ipTC\\IP-TranslatorCalculator.csproj",
       "projectName": "IP-TranslatorCalculator",
-      "projectPath": "Z:\\2021 - '22\\Prog\\IP-TranslatorCalculator\\IP-TranslatorCalculator.csproj",
-      "packagesPath": "C:\\Users\\Fehér.Szabolcs\\.nuget\\packages\\",
-      "outputPath": "Z:\\2021 - '22\\Prog\\IP-TranslatorCalculator\\obj\\",
+      "projectPath": "C:\\Users\\Balázsi.Bálint\\Desktop\\ipTC\\ipTC\\IP-TranslatorCalculator.csproj",
+      "packagesPath": "C:\\Users\\Balázsi.Bálint\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Balázsi.Bálint\\Desktop\\ipTC\\ipTC\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Fehér.Szabolcs\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Balázsi.Bálint\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -36,6 +37,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -47,6 +49,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "imports": [
           "net461",
           "net462",
@@ -65,7 +68,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

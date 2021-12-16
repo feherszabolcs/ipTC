@@ -9,14 +9,14 @@
       MinHeight="800" MinWidth="650"
       Title="IPTranslate" Loaded="Page_Loaded">
 
-    <Grid Background="#FF264653" Margin="-16,0,0,0">
+    <Grid Margin="-16,0,0,0">
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>
-            <RowDefinition Height="2*"/>
+            <RowDefinition Height="auto"/>
             <RowDefinition Height="4*"/>
             <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
@@ -40,8 +40,8 @@
         </Viewbox>
 
 
-        <CheckBox Grid.Column="0" x:Name="ChbDec" Content="Decimális" Height="auto" FontSize="40" Checked="ChbDec_Checked" HorizontalAlignment="Center" Width="220" FontWeight="Bold" Margin="25"/>
-        <CheckBox Grid.Column="1" x:Name="ChbBin" Content="Bináris" HorizontalAlignment="Center" Height="auto" FontSize="40" FontWeight="Bold" Checked="ChbBin_Checked" Margin="25"/>
+        <CheckBox Grid.Column="0" x:Name="ChbDec" Content="Decimális" Foreground="White" Height="auto" FontSize="40" Checked="ChbDec_Checked" HorizontalAlignment="Center" Width="220" FontWeight="Bold" Margin="25,50"/>
+        <CheckBox Grid.Column="1" x:Name="ChbBin" Content="Bináris" Foreground="White" HorizontalAlignment="Center" Height="auto" FontSize="40" FontWeight="Bold" Checked="ChbBin_Checked" Margin="25,50"/>
 
         <!--Bináris input-->
         <Viewbox Grid.Row="1" Grid.ColumnSpan="2" VerticalAlignment="Top" Margin="50,30">

@@ -27,11 +27,14 @@ namespace IP_TranslatorCalculator.Pages
         {
             InitializeComponent();
         }
-
-        private void ChbDec_Checked(object sender, RoutedEventArgs e)
+        static PublicIP ip = new PublicIP();
+        public void ChbDec_Checked(object sender, RoutedEventArgs e)
         {
+
             if (ChbBin.IsChecked == true) {
                 ChbBin.IsChecked = false;
+                ChbDec.Foreground = ip.FromHex("#FFF4A261");
+                ChbBin.Foreground = Brushes.White;
                 ChbBin.IsEnabled = true;
                 ChbDec.IsEnabled = false;
             } 
@@ -46,6 +49,8 @@ namespace IP_TranslatorCalculator.Pages
         {
             if (ChbDec.IsChecked == true) {
                 ChbBin.IsEnabled = false;
+                ChbBin.Foreground = ip.FromHex("#FFF4A261");
+                ChbDec.Foreground = Brushes.White;
                 ChbDec.IsEnabled = true;
                 ChbDec.IsChecked = false;
             } 

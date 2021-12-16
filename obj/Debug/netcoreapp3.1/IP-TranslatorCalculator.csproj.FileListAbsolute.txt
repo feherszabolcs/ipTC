@@ -123,3 +123,5 @@ C:\Users\Fehér.Szabolcs\Desktop\ipTC-main\ipTC\obj\Debug\netcoreapp3.1\IP-Trans
 C:\Users\Fehér.Szabolcs\Desktop\ipTC-main\ipTC\obj\Debug\netcoreapp3.1\IP-TranslatorCalculator.AssemblyInfo.cs
 C:\Users\Fehér.Szabolcs\Desktop\ipTC-main\ipTC\obj\Debug\netcoreapp3.1\IP-TranslatorCalculator.dll
 C:\Users\Fehér.Szabolcs\Desktop\ipTC-main\ipTC\obj\Debug\netcoreapp3.1\IP-TranslatorCalculator.pdb
+C:\Users\Balázsi.Bálint\Desktop\ipTC\ipTC\obj\Debug\netcoreapp3.1\Pages\HomePage.g.cs
+C:\Users\Balázsi.Bálint\Desktop\ipTC\ipTC\obj\Debug\netcoreapp3.1\Pages\HomePage.baml

@@ -18,6 +18,7 @@ namespace IP_TranslatorCalculator.Pages
     /// </summary>
     public partial class Page1: Page
     {
+
         public Page1()
         {
             InitializeComponent();
@@ -51,6 +52,6 @@ namespace IP_TranslatorCalculator.Pages
 
         //MINDEN átméreteződés után az új megnyitott ablak középen, az uj megnyitott ablak méretétől függetlentül
 
-        
+
     }
 }

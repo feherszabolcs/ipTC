@@ -1,19 +1,19 @@
 ﻿IP-TranslatorCalculator
-
+1.0.0.0
 
 winexe
 C#
 .cs
-Z:\2021 - '22\Prog\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\
+C:\Users\Balázsi.Bálint\Desktop\ipTC\ipTC\obj\Debug\netcoreapp3.1\
 IP_TranslatorCalculator
 none
 false
-TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1
-Z:\2021 - '22\Prog\IP-TranslatorCalculator\App.xaml
-42116327434
+TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
+C:\Users\Balázsi.Bálint\Desktop\ipTC\ipTC\App.xaml
+4-1265629230
 
-8207184431
-1921654412462
+9-436104806
+192-1533232326
 Pages\HomePage.xaml;Pages\IPTranslate.xaml;Pages\MainWindow.xaml;Pages\NetworkOptimizer.xaml;
 
 False

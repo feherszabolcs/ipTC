@@ -10,13 +10,16 @@
       MaxHeight="800" MaxWidth="650"
       Title="Page1">
 
-    <Grid x:Name="GrMain" Background="#FF264653">
+    <Grid x:Name="GrMain">
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="100" />
         </Grid.RowDefinitions>
+
+        
+
         <Viewbox>
             <Button Width="310" Margin="25,5,25,5" Style="{StaticResource RoundButtonTemplate}" x:Name="BtnTranslate" Content="IP-v4 átváltó"  FontSize="30" FontWeight="Bold" Click="BtnClick_Translate" Grid.RowSpan="2" Background="#FFF4A261" Foreground="White"></Button>
         </Viewbox>
@@ -27,7 +30,7 @@
             <Button Grid.Column="2" Width="310" Margin="25,5,25,5" Style="{StaticResource RoundButtonTemplate}" x:Name="BtnNwAddress" Content="Beállítások"  FontSize="30" FontWeight="Bold" Click="BtnClick_Nw" Grid.RowSpan="2" Background="#FFF4A261" Foreground="White" ></Button>
         </Viewbox>
         <Viewbox Grid.Row="3">
-            <Label Content="IP-számláló" FontFamily="Arial Black" FontSize="80" Height="auto" Margin="200,30" Background="#00000000" Foreground="#662A9D8F" />
+            <Label Content="IP-számláló" FontFamily="Arial Black" FontSize="80" Height="auto" Margin="200,30" Background="#00000000" Foreground="white" />
         </Viewbox>
 
         <!--TODO:

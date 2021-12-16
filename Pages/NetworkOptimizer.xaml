@@ -9,7 +9,7 @@
       MinHeight="800" MinWidth="650"
       Title="Hálózati címzés">
     <!--Alhálózati maszk átváltás '/' formából/ba, hálózati cím számítás maszk alapján, eszközök száma a hálózatban-->
-    <Grid Background="#ff264653">
+    <Grid>
         <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition Height="*"/>

@@ -4,6 +4,7 @@ using System.Net;
 using System.Net.NetworkInformation;
 using System.Net.Sockets;
 using System.Text;
+using System.Windows.Media;
 using IP_TranslatorCalculator.Pages;
 
 namespace IP_TranslatorCalculator.BackEnd
@@ -41,7 +42,12 @@ namespace IP_TranslatorCalculator.BackEnd
            
             return maxhosts.ToString();
         }
-       
+        public Brush FromHex(string hex)
+        {
+            var c = new System.Windows.Media.BrushConverter();
+            return (Brush)c.ConvertFromString(hex);
+        }
+
 
     }
 }
