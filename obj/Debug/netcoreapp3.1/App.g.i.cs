@@ -47,7 +47,7 @@ namespace IP_TranslatorCalculator {
         /// InitializeComponent
         /// </summary>
         [System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "5.0.10.0")]
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "4.8.1.0")]
         public void InitializeComponent() {
             if (_contentLoaded) {
                 return;
@@ -59,7 +59,7 @@ namespace IP_TranslatorCalculator {
             
             #line default
             #line hidden
-            System.Uri resourceLocater = new System.Uri("/IP-TranslatorCalculator;component/app.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/IP-TranslatorCalculator;V1.0.0.0;component/app.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\App.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
@@ -73,7 +73,7 @@ namespace IP_TranslatorCalculator {
         /// </summary>
         [System.STAThreadAttribute()]
         [System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "5.0.10.0")]
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "4.8.1.0")]
         public static void Main() {
             IP_TranslatorCalculator.App app = new IP_TranslatorCalculator.App();
             app.InitializeComponent();

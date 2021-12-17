@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Balázsi.Bálint\Desktop\ipTC\ipTC\obj\Debug\netcoreapp3.1\
+D:\things\Programs\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\
 IP_TranslatorCalculator
 none
 false
-TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
-C:\Users\Balázsi.Bálint\Desktop\ipTC\ipTC\App.xaml
-4-1265629230
+TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1
+D:\things\Programs\IP-TranslatorCalculator\App.xaml
+42116327434
 
-9-436104806
-192-1533232326
+9-402867172
+1921654412462
 Pages\HomePage.xaml;Pages\IPTranslate.xaml;Pages\MainWindow.xaml;Pages\NetworkOptimizer.xaml;
 
-False
+True
 
