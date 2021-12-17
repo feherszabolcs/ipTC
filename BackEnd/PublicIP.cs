@@ -4,6 +4,9 @@ using System.Net;
 using System.Net.NetworkInformation;
 using System.Net.Sockets;
 using System.Text;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Input;
 using System.Windows.Media;
 using IP_TranslatorCalculator.Pages;
 
@@ -17,14 +20,28 @@ namespace IP_TranslatorCalculator.BackEnd
         public List<IPAddress> usedIPs = new List<IPAddress>();
         public IPAddress StoreIP()
         {
+            string UserIpInString = "";
             //Return the user's public ip
-            string UserIpInString = new WebClient().DownloadString("http://icanhazip.com").Replace("\\r\\n", "").Replace("\\n", "").Trim();
-            var UserIP = IPAddress.Parse(UserIpInString);
-            usedIPs.Add(UserIP);
+            try
+            {
+                UserIpInString = new WebClient().DownloadString("http://icanhazip.com").Replace("\\r\\n", "").Replace("\\n", "").Trim();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("A funkció nem érhető el!", "Hiba!", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
 
-            return UserIP;
+            if (UserIpInString != "")
+            {
+                var UserIP = IPAddress.Parse(UserIpInString);
+                usedIPs.Add(UserIP);
+                return UserIP;
+            }
+            else return null;
+
+
         }
-        public string CalculateMaxHost(string ip, string mask)
+        public string CalculateMaxHost(string ip, string mask) //-> maszkhoz tartozó max hostok
         {
             NetworkOptimizer nw = new NetworkOptimizer();
             IPTranslate it = new IPTranslate();
@@ -47,7 +64,6 @@ namespace IP_TranslatorCalculator.BackEnd
             var c = new BrushConverter();
             return (Brush)c.ConvertFromString(hex);
         }
-
 
     }
 }

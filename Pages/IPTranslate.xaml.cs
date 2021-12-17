@@ -28,6 +28,7 @@ namespace IP_TranslatorCalculator.Pages
             InitializeComponent();
         }
         static PublicIP ip = new PublicIP();
+        static NetworkOptimizer nw = new NetworkOptimizer();
         public void ChbDec_Checked(object sender, RoutedEventArgs e)
         {
 

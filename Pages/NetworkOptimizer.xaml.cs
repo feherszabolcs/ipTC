@@ -47,7 +47,10 @@ namespace IP_TranslatorCalculator.Pages
 
         private void btnUseOwnIP_Click(object sender, RoutedEventArgs e)
         {
-            tbIpAddress.Text = p.StoreIP().ToString();
+            if(p.StoreIP() != null)
+            {
+                tbIpAddress.Text = p.StoreIP().ToString();
+            }
         }
 
         private void btnCalculate_Click(object sender, RoutedEventArgs e)
@@ -57,8 +60,19 @@ namespace IP_TranslatorCalculator.Pages
 
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
-            btnCalculate.IsEnabled = false;
+            //btnCalculate.IsEnabled = false;
         }
 
+        public void Btn_MouseEnter(object sender, MouseEventArgs e)
+        {
+            Button bt = (Button)sender;
+            bt.Background = p.FromHex("#E76F51");
+        }
+
+        public void Btn_MouseLeave(object sender, MouseEventArgs e)
+        {
+            Button bt = (Button)sender;
+            bt.Background = p.FromHex("#F4A261");
+        }
     }
 }
