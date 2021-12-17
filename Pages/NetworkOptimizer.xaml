@@ -15,7 +15,8 @@
             <RowDefinition/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
-            <RowDefinition Height="auto"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="100" />
         </Grid.RowDefinitions>
 
 
@@ -50,7 +51,7 @@
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
                 <Button MouseEnter="Btn_MouseEnter" MouseLeave="Btn_MouseLeave" x:Name="btnUseOwnIP" Grid.Row="0" Content="Saját IP használata"  Style="{StaticResource RoundButtonTemplate}" FontSize="30" Padding="8" Margin="0,5" Background="#FFF4A261" Foreground="White" Width="300" Click="btnUseOwnIP_Click"/>
-                <Button Grid.Row="1" Content="Számítás"  Style="{StaticResource RoundButtonTemplate}" Margin="0,5" Name="btnCalculate" HorizontalAlignment="Center" FontSize="30" VerticalAlignment="Bottom" Padding="8" Height="44" Width="160" Click="btnCalculate_Click" Background="#FFF4A261" Foreground="White"/>
+                <Button Grid.Row="1" Content="Számítás"  Style="{StaticResource RoundButtonTemplate}" MouseEnter="Btn_MouseEnter" MouseLeave="Btn_MouseLeave" Margin="0,5" Name="btnCalculate" HorizontalAlignment="Center" FontSize="30" VerticalAlignment="Bottom" Padding="8" Height="44" Width="160" Click="btnCalculate_Click" Background="#FFF4A261" Foreground="White"/>
             </Grid>
         </Viewbox>
 
@@ -79,14 +80,18 @@
 
 
         <!--HOME-->
-        <Viewbox VerticalAlignment="Bottom" Grid.Row="3" Grid.ColumnSpan="2" Height="53" HorizontalAlignment="Center" Margin="0,0,0,150">
+        <Viewbox VerticalAlignment="Bottom" Grid.Row="3" Height="53" HorizontalAlignment="Center">
             <StackPanel>
-                <Button BorderBrush="{x:Null}" x:Name="BtnHome" Width="auto" HorizontalAlignment="Right" Margin="0,0,20,20" Click="BtnHome_click" Background="{x:Null}" >
+                <Button BorderBrush="{x:Null}" x:Name="BtnHome" Width="auto" HorizontalAlignment="Center" Margin="0,0,0,30" Click="BtnHome_click" Background="{x:Null}" >
                     <StackPanel>
                         <Image Source="/PngItem_2619202.png"/>
                     </StackPanel>
                 </Button>
             </StackPanel>
         </Viewbox>
+        <Viewbox Grid.Row="4">
+            <Label Content="IP-számláló" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="50" Margin="0,0,0,20" Height="auto" HorizontalContentAlignment="Center" Background="#00000000" Foreground="#FF10313E" />
+        </Viewbox>
+
     </Grid>
 </Page>

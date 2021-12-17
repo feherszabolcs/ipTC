@@ -66,6 +66,7 @@ namespace IP_TranslatorCalculator.Pages
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
             ChbBin.IsChecked = true;
+            ChbBin.Foreground = ip.FromHex("#FFF4A261");
         }
 
         private void BtnHome_click(object sender, RoutedEventArgs e)
@@ -163,5 +164,16 @@ namespace IP_TranslatorCalculator.Pages
                 TbBinform.Text = OctettToBin(m[0]) + OctettToBin(m[1]) + OctettToBin(m[2]) + OctettToBin(m[3]);
             }
         }
+
+        private void Btn_MouseEnter(object sender, MouseEventArgs e)
+        {
+            nw.Btn_MouseEnter(sender, e);
+        }
+
+        public void Btn_MouseLeave(object sender, MouseEventArgs e)
+        {
+            nw.Btn_MouseLeave(sender, e);
+        }
+
     }
 }

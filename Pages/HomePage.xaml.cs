@@ -18,6 +18,7 @@ namespace IP_TranslatorCalculator.Pages
     /// </summary>
     public partial class Page1: Page
     {
+        static NetworkOptimizer nw = new NetworkOptimizer();
 
         public Page1()
         {
@@ -49,6 +50,16 @@ namespace IP_TranslatorCalculator.Pages
             //Main.Content = new MainWindow();
         }
 
+        private void Btn_MouseEnter(object sender, MouseEventArgs e)
+        {
+            nw.Btn_MouseEnter(sender, e);
+
+        }
+
+        public void Btn_MouseLeave(object sender, MouseEventArgs e)
+        {
+            nw.Btn_MouseLeave(sender, e);
+        }
 
         //MINDEN átméreteződés után az új megnyitott ablak középen, az uj megnyitott ablak méretétől függetlentül
 
