@@ -113,7 +113,7 @@ namespace IP_TranslatorCalculator.Pages
 
             }
         }
-        private string BinToDec(string octett) {
+        public string BinToDec(string octett) {
             int r = 0;
             if(octett.Length == 8)
             {

@@ -24,6 +24,10 @@ namespace IP_TranslatorCalculator.Pages
         {
             InitializeComponent();
         }
+        public string FullIP()
+        {
+            return tbIp1.Text + "." + tbIp2.Text + "." + tbIp3.Text + "." + tbIp4.Text;
+        }
         private void BtnHome_click(object sender, RoutedEventArgs e)
         {
             Application.Current.MainWindow.Width = 650;
@@ -32,6 +36,7 @@ namespace IP_TranslatorCalculator.Pages
             Application.Current.MainWindow.ResizeMode = ResizeMode.NoResize;
         }
         static PublicIP p = new PublicIP();
+        static IPTranslate i = new IPTranslate();
 
         private void tbIP_PreviewTextInput(object sender, TextCompositionEventArgs e) //:(
         {
@@ -45,17 +50,36 @@ namespace IP_TranslatorCalculator.Pages
             }
         }
 
+        private void tbMask_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            Regex reg = new Regex("[^0-9]+");
+            e.Handled = reg.IsMatch(e.Text);
+            string s = ((TextBox)sender).Text;
+            string fText = s + e.Text;
+            if (!reg.IsMatch(e.Text))
+            {
+                e.Handled = int.Parse(fText) > 32;
+            }
+        }
         private void btnUseOwnIP_Click(object sender, RoutedEventArgs e)
         {
             if(p.StoreIP() != null)
             {
-                tbIpAddress.Text = p.StoreIP().ToString();
+                string[] m = p.StoreIP().ToString().Split('.');
+                tbIp1.Text = m[0];
+                tbIp2.Text = m[1];
+                tbIp3.Text = m[2];
+                tbIp4.Text = m[3];
             }
         }
 
         private void btnCalculate_Click(object sender, RoutedEventArgs e)
         {
-            tbDevCount.Text = p.CalculateMaxHost(tbIpAddress.Text, tbMask.Text);
+            string nwAdd = NwAddressFinder(FullIP(), tbMask.Text);
+            string startAdd = StartIp(nwAdd);
+            tbDevCount.Text = p.CalculateMaxHost(FullIP(), tbMask.Text);
+            tbNwAdd.Text = nwAdd;
+            tbStartIp.Text = startAdd;
         }
 
         private void Page_Loaded(object sender, RoutedEventArgs e)
@@ -74,5 +98,36 @@ namespace IP_TranslatorCalculator.Pages
             Button bt = (Button)sender;
             bt.Background = p.FromHex("#F4A261");
         }
+        private string Sub(string Binip)
+        {
+            string octett1 = Binip.Substring(0, 8);
+            string octett2 = Binip.Substring(8, 8);
+            string octett3 = Binip.Substring(16, 8);
+            string octett4 = Binip.Substring(24, 8);
+            return i.BinToDec(octett1) + "." + i.BinToDec(octett2) + "." + i.BinToDec(octett3) + "." + i.BinToDec(octett4); // hál cím dec formában
+
+        }
+        private string NwAddressFinder(string ip, string mask) // /24-es maszk => mask = 24 (bit)
+        {
+            string[] m = ip.Split('.');
+            string bin = i.OctettToBin(m[0]) + i.OctettToBin(m[1]) + i.OctettToBin(m[2]) + i.OctettToBin(m[3]);
+            string binMask = "";
+            binMask = binMask.PadLeft(int.Parse(mask), '1');
+            binMask += mask.PadLeft(32, '0');
+            string output = "";
+            for (int i = 0; i < 32; i++)
+            {
+                if (bin[i] == '1' && binMask[i] == '1') output += "1";
+                else output += "0";
+            }
+            return Sub(output);
+        }
+        private string StartIp(string nwAdd)
+        {
+            string[] s = nwAdd.Split('.');
+            int m = int.Parse(s[3]) + 1;
+            return s[0] + "." + s[1] + "." + s[2] + "." + s[3].Replace(s[3], m.ToString());
+        }
+        
     }
 }

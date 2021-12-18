@@ -52,7 +52,7 @@ namespace IP_TranslatorCalculator.BackEnd
             int host = int.Parse(mask);
             double net = 32 - host;
 
-            if (net < 2) throw new ArgumentException("Túl sok eszköz!");
+            if (net < 2) MessageBox.Show("A legnagyobb maszk maximum 30 bites lehet!", "Hiba!", MessageBoxButton.OK, MessageBoxImage.Error);
 
             double maxhosts = Math.Pow(2, net) - 2;
 

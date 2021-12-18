@@ -12,15 +12,15 @@
     <!--Alhálózati maszk átváltás '/' formából/ba, hálózati cím számítás maszk alapján, eszközök száma a hálózatban-->
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="7*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="6*"/>
             <RowDefinition Height="100"/>
             <RowDefinition Height="100" />
         </Grid.RowDefinitions>
 
 
-        <Viewbox Margin="20,50,10,50" Grid.ColumnSpan="3">
+        <Viewbox Margin="20,50,30,50" Grid.ColumnSpan="3">
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
@@ -33,10 +33,27 @@
                 </Grid.RowDefinitions>
 
                 <Label Content="IP-v4 cím" FontSize="20" HorizontalAlignment="Center" Height="auto" Grid.ColumnSpan="3" FontWeight="Bold"/>
+                <Grid Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="." FontSize="18" Grid.Column="1" Width="13" Height="auto" Margin="0,0,0,-5" VerticalAlignment="Bottom" VerticalContentAlignment="Bottom"/>
+                    <Label Content="." FontSize="18" Grid.Column="3" Width="13" Height="auto" Margin="0,0,0,-5" VerticalAlignment="Bottom" VerticalContentAlignment="Bottom"/>
+                    <Label Content="." FontSize="18" Grid.Column="5" Width="13" Height="auto" Margin="0,0,0,-5" VerticalAlignment="Bottom" VerticalContentAlignment="Bottom"/>
+                    <TextBox x:Name="tbIp1" Grid.Column="0" Margin="5,0" Width="100" FontSize="30" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" MaxLength="3" PreviewTextInput="tbIP_PreviewTextInput"/>
+                    <TextBox x:Name="tbIp2" Grid.Column="2" Margin="5,0" Width="100" FontSize="30" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" MaxLength="3" PreviewTextInput="tbIP_PreviewTextInput"/>
+                    <TextBox x:Name="tbIp3" Grid.Column="4" Margin="5,0" Width="100" FontSize="30" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" MaxLength="3" PreviewTextInput="tbIP_PreviewTextInput"/>
+                    <TextBox x:Name="tbIp4" Grid.Column="6" Margin="5,0" Width="100" FontSize="30" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" MaxLength="3" PreviewTextInput="tbIP_PreviewTextInput"/>
+                </Grid>
 
-                <TextBox Name="tbIpAddress" Grid.Column="0" Grid.Row="1" Width="300" Height="auto" FontSize="30" HorizontalAlignment="Right" PreviewTextInput="tbIP_PreviewTextInput"/>
                 <Label Content="/" Grid.Row="1" Grid.Column="1" FontSize="20" Height="auto"/>
-                <TextBox x:Name="tbMask" Grid.Row="1" Grid.Column="2" Width="40" MaxLength="2" Text="24" FontSize="30" />
+                <TextBox x:Name="tbMask" Grid.Row="1" Grid.Column="2" Width="40" MaxLength="2" Text="24" FontSize="30" PreviewTextInput="tbMask_PreviewTextInput" />
             </Grid>
         </Viewbox>
 
@@ -65,16 +82,22 @@
                 <Grid.RowDefinitions>
                     <RowDefinition Height="49*"/>
                     <RowDefinition Height="27*"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
                     <RowDefinition Height="38*"/>
                 </Grid.RowDefinitions>
 
                 <Label Grid.Column="0" Content="Maximális&#x0a;eszközök száma" VerticalAlignment="Center" Height="40"/>
                 <Label Grid.Row="1" Grid.Column="0" Content="Hálózati cím" VerticalAlignment="Center" Height="26"/>
-                <Label Grid.Row="2" Grid.Column="0" Content="Szórási cím" VerticalAlignment="Center" Height="26"/>
+                <Label Grid.Row="2" Grid.Column="0" Content="Kezdő cím" VerticalAlignment="Center" Height="26"/>
+                <Label Grid.Row="3" Grid.Column="0" Content="Utolsó cím" VerticalAlignment="Center" Height="26"/>
+                <Label Grid.Row="4" Grid.Column="0" Content="Szórási cím" VerticalAlignment="Center" Height="26"/>
 
                 <TextBox x:Name="tbDevCount" Grid.Row="0" Grid.Column="1" IsReadOnly="True" Width="50" Margin="10,10,0,10" HorizontalAlignment="Left" MaxLength="5"/>
-                <TextBox Grid.Row="1" Grid.Column="1" IsReadOnly="True" Width="150" Margin="10"/>
-                <TextBox Grid.Row="2" Grid.Column="1" IsReadOnly="True" Width="150" Margin="10"/>
+                <TextBox Name="tbNwAdd" Grid.Row="1" Grid.Column="1" IsReadOnly="True" Width="150" Margin="10"/>
+                <TextBox Name="tbStartIp" Grid.Row="2" Grid.Column="1" IsReadOnly="True" Width="150" Margin="10"/>
+                <TextBox Name="tbEndIp" Grid.Row="3" Grid.Column="1" IsReadOnly="True" Width="150" Margin="10"/>
+                <TextBox x:Name="tbBroadcast" Grid.Row="4" Grid.Column="1" IsReadOnly="True" Width="150" Margin="10"/>
             </Grid>
         </Viewbox>
 
