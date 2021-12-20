@@ -53,14 +53,12 @@
         </Viewbox>
 
         <!--Home Gomb-->
-        <Viewbox VerticalAlignment="Bottom" Grid.Row="2" Grid.ColumnSpan="2" Height="53" Margin="20,0,50,0" HorizontalAlignment="Center" Grid.RowSpan="2">
-            <StackPanel>
-                <Button BorderBrush="{x:Null}" x:Name="BtnHome" Width="auto" HorizontalAlignment="Center" Margin="0,0,0,30" Click="BtnHome_click" Background="{x:Null}" >
-                    <StackPanel>
-                        <Image Source="/PngItem_2619202.png"/>
-                    </StackPanel>
-                </Button>
-            </StackPanel>
+        <Viewbox VerticalAlignment="Bottom" Grid.Row="3" Grid.ColumnSpan="2"  HorizontalAlignment="Center" Height="auto">
+            <Button Height="30" BorderBrush="{x:Null}" x:Name="BtnHome" Width="30" HorizontalAlignment="Center" Margin="5" Click="BtnHome_click" MouseEnter="BtnHome_MouseEnter" MouseLeave="BtnHome_MouseLeave">
+                <Button.Background >
+                    <ImageBrush ImageSource="/home_button_light.png"/>
+                </Button.Background>
+            </Button>
         </Viewbox>
 
         <Viewbox Grid.Row="4" Grid.ColumnSpan="2" HorizontalAlignment="Center">
