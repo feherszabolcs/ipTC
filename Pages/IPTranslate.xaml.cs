@@ -175,19 +175,24 @@ namespace IP_TranslatorCalculator.Pages
             nw.Btn_MouseLeave(sender, e);
         }
 
-        private void BtnHome_MouseEnter(object sender, MouseEventArgs e)
+        public void BtnHome_MouseEnter(object sender, MouseEventArgs e)
         {
             Button btn = (Button)sender;
             ImageBrush ib = new ImageBrush();
             Image i = new Image();
-            i.Source = new BitmapImage(new Uri(@"component/home_button.png", UriKind.Relative));
+            i.Source = new BitmapImage(new Uri(@"home_button.png", UriKind.Relative));
             ib.ImageSource = i.Source;
             btn.Background = ib;
         }
 
-        private void BtnHome_MouseLeave(object sender, MouseEventArgs e)
+        public void BtnHome_MouseLeave(object sender, MouseEventArgs e)
         {
-
+            Button btn = (Button)sender;
+            ImageBrush ib = new ImageBrush();
+            Image i = new Image();
+            i.Source = new BitmapImage(new Uri(@"home_button_light.png", UriKind.Relative));
+            ib.ImageSource = i.Source;
+            btn.Background = ib;
         }
     }
 }

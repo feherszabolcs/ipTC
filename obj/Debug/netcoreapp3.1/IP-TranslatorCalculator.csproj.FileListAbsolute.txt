@@ -124,3 +124,6 @@ C:\Users\Balázsi.Bálint\Desktop\ipTC\ipTC\obj\Debug\netcoreapp3.1\Pages\HomePa
 Z:\2021 - '22\Prog\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\IP-TranslatorCalculator.csprojAssemblyReference.cache
 Z:\2021 - '22\Prog\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\Pages\HomePage.g.cs
 Z:\2021 - '22\Prog\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\Pages\HomePage.baml
+D:\things\Programs\IP-TranslatorCalculator\bin\Debug\netcoreapp3.1\home_button.png
+D:\things\Programs\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\IP-TranslatorCalculator_Content.g.cs
+D:\things\Programs\IP-TranslatorCalculator\bin\Debug\netcoreapp3.1\home_button_light.png

@@ -170,5 +170,13 @@ namespace IP_TranslatorCalculator.Pages
             return m[0] + "." + m[1] + "." + m[2] + "." + m[3].Replace(m[3], lastOct.ToString());
         }
 
+        private void BtnHome_MouseEnter(object sender, MouseEventArgs e)
+        {
+            i.BtnHome_MouseEnter(sender, e);
+        }
+        private void BtnHome_MouseLeave(object sender, MouseEventArgs e)
+        {
+            i.BtnHome_MouseLeave(sender, e);
+        }
     }
 }

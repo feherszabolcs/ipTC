@@ -14,10 +14,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="home_button.png">
+    <Content Include="home_button.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="home_button_light.png" />
+    </Content>
+    <Content Include="home_button_light.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Resource Include="PngItem_2619202.png" />
   </ItemGroup>
 
