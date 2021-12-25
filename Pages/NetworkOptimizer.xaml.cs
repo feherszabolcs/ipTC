@@ -77,9 +77,13 @@ namespace IP_TranslatorCalculator.Pages
         {
             string nwAdd = NwAddressFinder(FullIP(), tbMask.Text);
             string startAdd = StartIp(nwAdd);
+            string bIp = BroadcastIp(tbMask.Text, FullIP());
             tbDevCount.Text = p.CalculateMaxHost(FullIP(), tbMask.Text);
             tbNwAdd.Text = nwAdd;
             tbStartIp.Text = startAdd;
+            tbBroadcast.Text = bIp;
+            tbEndIp.Text = LastIp(bIp);
+
         }
 
         private void Page_Loaded(object sender, RoutedEventArgs e)
@@ -128,6 +132,43 @@ namespace IP_TranslatorCalculator.Pages
             int m = int.Parse(s[3]) + 1;
             return s[0] + "." + s[1] + "." + s[2] + "." + s[3].Replace(s[3], m.ToString());
         }
-        
+        private string BroadcastIp(string mask, string ip)
+        {
+            string binMask = "";
+            binMask = binMask.PadLeft(int.Parse(mask), '1');
+            binMask = binMask.PadRight(32, '0');
+            string[] m = ip.Split('.');
+
+            string binRev = Reverse(binMask);
+            string bin = i.OctettToBin(m[0]) + i.OctettToBin(m[1]) + i.OctettToBin(m[2]) + i.OctettToBin(m[3]);
+            string output = "";
+
+            for (int i = 0; i < 32; i++)
+            {
+                if (bin[i] == '1' || binRev[i] == '1') output += "1";
+                else output += "0";
+            }
+
+
+            return Sub(output);
+        }
+        public static string Reverse(string bin) // bináris maszk reverse
+        {
+            char[] charArray = bin.ToCharArray();
+            List<char> output = new List<char>();
+            foreach (var item in charArray)
+            {
+                if (item == '1') output.Add('0');
+                else output.Add('1');
+            }
+            return new string(output.ToArray());
+        }
+        private string LastIp(string bIp)
+        {
+            string[] m = bIp.Split('.');
+            int lastOct = int.Parse(m[3]) - 1;
+            return m[0] + "." + m[1] + "." + m[2] + "." + m[3].Replace(m[3], lastOct.ToString());
+        }
+
     }
 }
