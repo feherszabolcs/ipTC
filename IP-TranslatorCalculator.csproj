@@ -8,10 +8,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="home_button.png" />
+    <None Remove="home_button_light.png" />
     <None Remove="PngItem_2619202.png" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="home_button.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="home_button_light.png" />
     <Resource Include="PngItem_2619202.png" />
   </ItemGroup>
 
