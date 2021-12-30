@@ -9,11 +9,32 @@
       Title="InfoMask">
 
     <Grid>
-        <Label Content=" aaaaaa"/>
         <!-- 
         Maszk átváltása
         Maszk feladata
         Alapértelmezett maszk az osztályokhoz pl, C = /24
         -->
+        <Label Content="Alhálózati maszk" Foreground="White" FontSize="25" HorizontalAlignment="Center" Margin="0,26,0,0" FontWeight="Bold"/>
+        <Label Foreground="White" FontSize="15" Margin="5,90,5,0" HorizontalAlignment="Center">
+            Az alhálózati maszk (az IPv4 számára), mint az IP-cím 4. verziója, 32 bites szám.
+        </Label>
+        <Label Foreground="White" FontSize="15" Margin="5,110,5,0" HorizontalAlignment="Center">
+            A maszkot megkülönböztetik az IP-cím alhálózati részét, valamint azt a részt, amely
+        </Label>
+        <Label Foreground="White" FontSize="15" Margin="5,130,5,0" HorizontalAlignment="Center">
+             az adott alhálózat host címe. Az alhálózati maszk nagyon specifikus felépítésű.
+        </Label>
+        <Label Foreground="White" FontSize="15" Margin="5,180,5,0" HorizontalAlignment="Center">
+            A maszk értékét az adott alhálózat összes útválasztójának
+        </Label>
+        <Label Foreground="White" FontSize="15" Margin="5,200,5,0" HorizontalAlignment="Center">
+            és számítógépének tudnia kell.
+        </Label>
+        <Label Foreground="White" FontSize="15" Margin="5,250,5,0" HorizontalAlignment="Center">
+            A 192.168.1.269 IP-cím és a 255.255.255.0 maszk esetében a rövid jelölés:
+        </Label>
+        <Label Foreground="White" FontSize="18" Margin="5,280,5,0" HorizontalAlignment="Center" FontWeight="Bold">
+            192.168.1.269/24
+        </Label>
     </Grid>
 </Page>
