@@ -8,8 +8,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="facebooklogo.png" />
+    <None Remove="githublogo.png" />
     <None Remove="home_button.png" />
     <None Remove="home_button_light.png" />
+    <None Remove="instagramlogo.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -17,6 +20,18 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="home_button_light.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="facebooklogo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="githublogo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="instagramlogo.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

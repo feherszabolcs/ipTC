@@ -14,5 +14,75 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
+
+        <Label Content="Fehér Szabolcs" Grid.Row="0" FontSize="25" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="20,0,0,0" Foreground="White"/>
+        <Viewbox Grid.Row="0" Width="80" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Button x:Name="BtnFSzIg" Style="{DynamicResource NoHover}" BorderBrush="{x:Null}" Click="BtnFSzIg_Click">
+                <Button.Background >
+                    <ImageBrush ImageSource="/instagramlogo.png"/>
+                </Button.Background>
+            </Button>
+        </Viewbox>
+        <Viewbox x:Name="BtnFSzF" Grid.Row="0" Width="80" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="120,0,0,0">
+            <Button Style="{DynamicResource NoHover}" BorderBrush="{x:Null}" Click="Button_Click">
+                <Button.Background >
+                    <ImageBrush ImageSource="/facebooklogo.png"/>
+                </Button.Background>
+            </Button>
+        </Viewbox>
+        <Viewbox x:Name="BtnFSzGh" Grid.Row="0" Width="80" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="247,0,0,0">
+            <Button Style="{DynamicResource NoHover}" BorderBrush="{x:Null}" Click="BtnFSzGh_Click">
+                <Button.Background >
+                    <ImageBrush ImageSource="/githublogo.png"/>
+                </Button.Background>
+            </Button>
+        </Viewbox>
+
+        <Label Content="Balázsi Bálint" Grid.Row="1" FontSize="25" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="20,0,0,0" Foreground="White"/>
+        <Viewbox Grid.Row="1" Width="80" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Button x:Name="BtnBBIg" Style="{DynamicResource NoHover}" BorderBrush="{x:Null}" Click="BtnBBIg_Click">
+                <Button.Background >
+                    <ImageBrush ImageSource="/instagramlogo.png"/>
+                </Button.Background>
+            </Button>
+        </Viewbox>
+        <Viewbox x:Name="BtnBBF" Grid.Row="1" Width="80" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="120,0,0,0">
+            <Button Style="{DynamicResource NoHover}" BorderBrush="{x:Null}" Click="BtnBBF_Click">
+                <Button.Background >
+                    <ImageBrush ImageSource="/facebooklogo.png"/>
+                </Button.Background>
+            </Button>
+        </Viewbox>
+        <Viewbox x:Name="BtnBBGh" Grid.Row="1" Width="80" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="247,0,0,0">
+            <Button Style="{DynamicResource NoHover}" BorderBrush="{x:Null}" Click="BtnBBGh_Click">
+                <Button.Background >
+                    <ImageBrush ImageSource="/githublogo.png"/>
+                </Button.Background>
+            </Button>
+        </Viewbox>
+
+        <Label Content="Gubicza Milán" Grid.Row="2" FontSize="25" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="20,0,0,0" Foreground="White"/>
+        <Viewbox Grid.Row="2" Width="80" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Button x:Name="BtnGMIg" Style="{DynamicResource NoHover}" BorderBrush="{x:Null}" Click="BtnGMIg_Click">
+                <Button.Background >
+                    <ImageBrush ImageSource="/instagramlogo.png"/>
+                </Button.Background>
+            </Button>
+        </Viewbox>
+        <Viewbox x:Name="BtnGMF" Grid.Row="2" Width="80" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="120,0,0,0">
+            <Button Style="{DynamicResource NoHover}" BorderBrush="{x:Null}" Click="BtnGMF_Click">
+                <Button.Background >
+                    <ImageBrush ImageSource="/facebooklogo.png"/>
+                </Button.Background>
+            </Button>
+        </Viewbox>
+        <Viewbox x:Name="BtnGMGh" Grid.Row="2" Width="80" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="247,0,0,0">
+            <Button Style="{DynamicResource NoHover}" BorderBrush="{x:Null}" Click="BtnGMGh_Click">
+                <Button.Background >
+                    <ImageBrush ImageSource="/githublogo.png"/>
+                </Button.Background>
+            </Button>
+        </Viewbox>
+
     </Grid>
 </Page>
