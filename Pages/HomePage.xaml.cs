@@ -1,22 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace IP_TranslatorCalculator.Pages
 {
     /// <summary>
     /// Interaction logic for Page1.xaml
     /// </summary>
-    public partial class Page1: Page
+    public partial class Page1 : Page
     {
         static NetworkOptimizer nw = new NetworkOptimizer();
 
@@ -47,7 +39,8 @@ namespace IP_TranslatorCalculator.Pages
 
         private void BtnClick_Nw(object sender, RoutedEventArgs e)
         {
-            //Main.Content = new MainWindow();
+            NavigationService.Navigate(new Pages.Sugo());
+            ContentChange();
         }
 
         private void Btn_MouseEnter(object sender, MouseEventArgs e)

@@ -10,7 +10,6 @@
   <ItemGroup>
     <None Remove="home_button.png" />
     <None Remove="home_button_light.png" />
-    <None Remove="PngItem_2619202.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -20,7 +19,6 @@
     <Content Include="home_button_light.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Resource Include="PngItem_2619202.png" />
   </ItemGroup>
 
 </Project>

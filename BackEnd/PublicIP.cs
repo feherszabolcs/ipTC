@@ -1,14 +1,9 @@
-﻿using System;
+﻿using IP_TranslatorCalculator.Pages;
+using System;
 using System.Collections.Generic;
 using System.Net;
-using System.Net.NetworkInformation;
-using System.Net.Sockets;
-using System.Text;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Input;
 using System.Windows.Media;
-using IP_TranslatorCalculator.Pages;
 
 namespace IP_TranslatorCalculator.BackEnd
 {
@@ -56,7 +51,7 @@ namespace IP_TranslatorCalculator.BackEnd
 
             double maxhosts = Math.Pow(2, net) - 2;
 
-           
+
             return maxhosts.ToString();
         }
         public Brush FromHex(string hex) //Szín beállítására

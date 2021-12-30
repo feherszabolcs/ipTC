@@ -110,6 +110,8 @@
                 </Button.Background>
             </Button>
         </Viewbox>
+        
+        <!--Promo-->
         <Viewbox Grid.Row="4">
             <Label Content="IP-számláló" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="50" Margin="0,0,0,20" Height="auto" HorizontalContentAlignment="Center" Background="#00000000" Foreground="#FF10313E" />
         </Viewbox>

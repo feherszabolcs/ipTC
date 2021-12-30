@@ -19,30 +19,6 @@ Z:\2021 - '22\Prog\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\Pages\Network
 Z:\2021 - '22\Prog\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\Pages\IPTranslate.baml
 Z:\2021 - '22\Prog\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\Pages\MainWindow.baml
 Z:\2021 - '22\Prog\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\Pages\NetworkOptimizer.baml
-D:\things\Programs\IP-TranslatorCalculator\bin\Debug\netcoreapp3.1\IP-TranslatorCalculator.exe
-D:\things\Programs\IP-TranslatorCalculator\bin\Debug\netcoreapp3.1\IP-TranslatorCalculator.deps.json
-D:\things\Programs\IP-TranslatorCalculator\bin\Debug\netcoreapp3.1\IP-TranslatorCalculator.runtimeconfig.json
-D:\things\Programs\IP-TranslatorCalculator\bin\Debug\netcoreapp3.1\IP-TranslatorCalculator.runtimeconfig.dev.json
-D:\things\Programs\IP-TranslatorCalculator\bin\Debug\netcoreapp3.1\IP-TranslatorCalculator.dll
-D:\things\Programs\IP-TranslatorCalculator\bin\Debug\netcoreapp3.1\IP-TranslatorCalculator.pdb
-D:\things\Programs\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\IP-TranslatorCalculator.csprojAssemblyReference.cache
-D:\things\Programs\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\Pages\IPTranslate.g.cs
-D:\things\Programs\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\Pages\MainWindow.g.cs
-D:\things\Programs\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\Pages\NetworkOptimizer.g.cs
-D:\things\Programs\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\App.g.cs
-D:\things\Programs\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\IP-TranslatorCalculator_MarkupCompile.cache
-D:\things\Programs\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\IP-TranslatorCalculator_MarkupCompile.lref
-D:\things\Programs\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\App.baml
-D:\things\Programs\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\Pages\IPTranslate.baml
-D:\things\Programs\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\Pages\MainWindow.baml
-D:\things\Programs\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\Pages\NetworkOptimizer.baml
-D:\things\Programs\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\IP-TranslatorCalculator.g.resources
-D:\things\Programs\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\IP-TranslatorCalculator.AssemblyInfoInputs.cache
-D:\things\Programs\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\IP-TranslatorCalculator.AssemblyInfo.cs
-D:\things\Programs\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\IP-TranslatorCalculator.csproj.CoreCompileInputs.cache
-D:\things\Programs\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\IP-TranslatorCalculator.dll
-D:\things\Programs\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\IP-TranslatorCalculator.pdb
-D:\things\Programs\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\IP-TranslatorCalculator.genruntimeconfig.cache
 C:\Users\Balázsi Edina\Desktop\ipTC\bin\Debug\netcoreapp3.1\IP-TranslatorCalculator.exe
 C:\Users\Balázsi Edina\Desktop\ipTC\bin\Debug\netcoreapp3.1\IP-TranslatorCalculator.deps.json
 C:\Users\Balázsi Edina\Desktop\ipTC\bin\Debug\netcoreapp3.1\IP-TranslatorCalculator.runtimeconfig.json
@@ -93,8 +69,6 @@ C:\Users\Balázsi.Bálint\Desktop\ipTC\ipTC\obj\Debug\netcoreapp3.1\IP-Translato
 C:\Users\Balázsi.Bálint\Desktop\ipTC\ipTC\obj\Debug\netcoreapp3.1\IP-TranslatorCalculator.dll
 C:\Users\Balázsi.Bálint\Desktop\ipTC\ipTC\obj\Debug\netcoreapp3.1\IP-TranslatorCalculator.pdb
 C:\Users\Balázsi.Bálint\Desktop\ipTC\ipTC\obj\Debug\netcoreapp3.1\IP-TranslatorCalculator.genruntimeconfig.cache
-D:\things\Programs\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\Pages\HomePage.g.cs
-D:\things\Programs\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\Pages\HomePage.baml
 C:\Users\Fehér.Szabolcs\Desktop\ipTC-main\ipTC\bin\Debug\netcoreapp3.1\IP-TranslatorCalculator.exe
 C:\Users\Fehér.Szabolcs\Desktop\ipTC-main\ipTC\bin\Debug\netcoreapp3.1\IP-TranslatorCalculator.deps.json
 C:\Users\Fehér.Szabolcs\Desktop\ipTC-main\ipTC\bin\Debug\netcoreapp3.1\IP-TranslatorCalculator.runtimeconfig.json
@@ -124,6 +98,37 @@ C:\Users\Balázsi.Bálint\Desktop\ipTC\ipTC\obj\Debug\netcoreapp3.1\Pages\HomePa
 Z:\2021 - '22\Prog\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\IP-TranslatorCalculator.csprojAssemblyReference.cache
 Z:\2021 - '22\Prog\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\Pages\HomePage.g.cs
 Z:\2021 - '22\Prog\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\Pages\HomePage.baml
-D:\things\Programs\IP-TranslatorCalculator\bin\Debug\netcoreapp3.1\home_button.png
+D:\things\Programs\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\Keszitok\Authors.g.cs
+D:\things\Programs\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\Keszitok\ContentPage.g.cs
+D:\things\Programs\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\Pages\HomePage.g.cs
+D:\things\Programs\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\Pages\IPTranslate.g.cs
+D:\things\Programs\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\Pages\MainWindow.g.cs
+D:\things\Programs\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\Pages\NetworkOptimizer.g.cs
+D:\things\Programs\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\Pages\Sugo.g.cs
+D:\things\Programs\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\App.g.cs
 D:\things\Programs\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\IP-TranslatorCalculator_Content.g.cs
+D:\things\Programs\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\IP-TranslatorCalculator_MarkupCompile.cache
+D:\things\Programs\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\IP-TranslatorCalculator_MarkupCompile.lref
+D:\things\Programs\IP-TranslatorCalculator\bin\Debug\netcoreapp3.1\IP-TranslatorCalculator.exe
+D:\things\Programs\IP-TranslatorCalculator\bin\Debug\netcoreapp3.1\home_button.png
 D:\things\Programs\IP-TranslatorCalculator\bin\Debug\netcoreapp3.1\home_button_light.png
+D:\things\Programs\IP-TranslatorCalculator\bin\Debug\netcoreapp3.1\IP-TranslatorCalculator.deps.json
+D:\things\Programs\IP-TranslatorCalculator\bin\Debug\netcoreapp3.1\IP-TranslatorCalculator.runtimeconfig.json
+D:\things\Programs\IP-TranslatorCalculator\bin\Debug\netcoreapp3.1\IP-TranslatorCalculator.runtimeconfig.dev.json
+D:\things\Programs\IP-TranslatorCalculator\bin\Debug\netcoreapp3.1\IP-TranslatorCalculator.dll
+D:\things\Programs\IP-TranslatorCalculator\bin\Debug\netcoreapp3.1\IP-TranslatorCalculator.pdb
+D:\things\Programs\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\App.baml
+D:\things\Programs\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\Keszitok\Authors.baml
+D:\things\Programs\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\Keszitok\ContentPage.baml
+D:\things\Programs\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\Pages\HomePage.baml
+D:\things\Programs\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\Pages\IPTranslate.baml
+D:\things\Programs\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\Pages\MainWindow.baml
+D:\things\Programs\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\Pages\NetworkOptimizer.baml
+D:\things\Programs\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\Pages\Sugo.baml
+D:\things\Programs\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\IP-TranslatorCalculator.g.resources
+D:\things\Programs\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\IP-TranslatorCalculator.AssemblyInfoInputs.cache
+D:\things\Programs\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\IP-TranslatorCalculator.AssemblyInfo.cs
+D:\things\Programs\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\IP-TranslatorCalculator.csproj.CoreCompileInputs.cache
+D:\things\Programs\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\IP-TranslatorCalculator.dll
+D:\things\Programs\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\IP-TranslatorCalculator.pdb
+D:\things\Programs\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\IP-TranslatorCalculator.genruntimeconfig.cache

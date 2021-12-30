@@ -7,6 +7,12 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Keszitok\Authors.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Keszitok\ContentPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Pages\IPTranslate.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -16,8 +22,17 @@
     <Compile Update="Pages\HomePage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Pages\Sugo.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="Keszitok\Authors.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Keszitok\ContentPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Pages\IPTranslate.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -28,6 +43,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Pages\HomePage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\Sugo.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

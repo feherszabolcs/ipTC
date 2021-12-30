@@ -1,20 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using IP_TranslatorCalculator.BackEnd;
+using System;
 using System.Text.RegularExpressions;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
-using System.Windows.Shapes;
-using System.Net;
-using System.IO;
-using System.ComponentModel;
-using IP_TranslatorCalculator.BackEnd;
 
 namespace IP_TranslatorCalculator.Pages
 {
@@ -32,13 +24,14 @@ namespace IP_TranslatorCalculator.Pages
         public void ChbDec_Checked(object sender, RoutedEventArgs e)
         {
 
-            if (ChbBin.IsChecked == true) {
+            if (ChbBin.IsChecked == true)
+            {
                 ChbBin.IsChecked = false;
                 ChbDec.Foreground = ip.FromHex("#FFF4A261");
                 ChbBin.Foreground = Brushes.White;
                 ChbBin.IsEnabled = true;
                 ChbDec.IsEnabled = false;
-            } 
+            }
             tb1.Visibility = Visibility.Visible;
             tb2.Visibility = Visibility.Visible;
             tb3.Visibility = Visibility.Visible;
@@ -48,13 +41,14 @@ namespace IP_TranslatorCalculator.Pages
         }
         private void ChbBin_Checked(object sender, RoutedEventArgs e)
         {
-            if (ChbDec.IsChecked == true) {
+            if (ChbDec.IsChecked == true)
+            {
                 ChbBin.IsEnabled = false;
                 ChbBin.Foreground = ip.FromHex("#FFF4A261");
                 ChbDec.Foreground = Brushes.White;
                 ChbDec.IsEnabled = true;
                 ChbDec.IsChecked = false;
-            } 
+            }
             tb1.Visibility = Visibility.Hidden;
             tb2.Visibility = Visibility.Hidden;
             tb3.Visibility = Visibility.Hidden;
@@ -85,11 +79,12 @@ namespace IP_TranslatorCalculator.Pages
 
         private void btnTranslate_Click(object sender, RoutedEventArgs e)
         {
-            if(ChbBin.IsChecked == true)
+            if (ChbBin.IsChecked == true)
             {
                 string output = "";
                 string binS = TbBinform.Text;
-                if (binS.Length != 32) {
+                if (binS.Length != 32)
+                {
                     MessageBox.Show("A megadott bináris forma nem 32 bit hosszú!", "Konvertálási hiba!", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
                 else
@@ -99,7 +94,7 @@ namespace IP_TranslatorCalculator.Pages
                     string third = binS.Substring(16, 8);
                     string fourth = binS.Substring(24, 8);
                     output = String.Format($"{BinToDec(first)}.{BinToDec(second)}.{BinToDec(third)}.{BinToDec(fourth)}");
-                    tbOutput.Visibility = (Visibility) 0;
+                    tbOutput.Visibility = (Visibility)0;
                     tbOutput.Text = output;
                     lblOut.Content = "A binárisan megadott szám decimális formában leírva:";
                 }
@@ -113,13 +108,14 @@ namespace IP_TranslatorCalculator.Pages
 
             }
         }
-        public string BinToDec(string octett) {
+        public string BinToDec(string octett)
+        {
             int r = 0;
-            if(octett.Length == 8)
+            if (octett.Length == 8)
             {
                 r = Convert.ToInt32(octett, 2);
             }
-         
+
             return r.ToString();
         }
         public string OctettToBin(string octett)
@@ -140,7 +136,7 @@ namespace IP_TranslatorCalculator.Pages
         {
             Regex reg = new Regex("[^0-9]+");
             e.Handled = reg.IsMatch(e.Text);
-            string s = ((TextBox) sender).Text;
+            string s = ((TextBox)sender).Text;
             string fText = s + e.Text;
             if (!reg.IsMatch(e.Text))
             {
