@@ -4,6 +4,8 @@ using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Navigation;
 using IP_TranslatorCalculator.Keszitok;
+using IP_TranslatorCalculator.Infos;
+using System;
 
 namespace IP_TranslatorCalculator.Pages
 {
@@ -35,7 +37,7 @@ namespace IP_TranslatorCalculator.Pages
         {
             i.BtnHome_MouseLeave(sender, e);
         }
-        static Keszitok.Authors a = new Keszitok.Authors();
+        static Authors a = new Authors();
         private void btnAuthors_Click(object sender, RoutedEventArgs e)
         {
             a.Show();
@@ -50,6 +52,20 @@ namespace IP_TranslatorCalculator.Pages
         {
             Button bt = (Button)sender;
             bt.Background = p.FromHex("#F4A261");
+        }
+
+        private void btnClass_Click(object sender, RoutedEventArgs e)
+        {
+            InfoWindow iw = new InfoWindow();
+            iw.Content.Source = new Uri("/Infos/InfoClass.xaml", UriKind.Relative);
+            iw.Show();
+        }
+
+        private void btnMask_Click(object sender, RoutedEventArgs e)
+        {
+            InfoWindow iw = new InfoWindow();
+            iw.Content.Source = new Uri("/Infos/InfoMask.xaml", UriKind.Relative);
+            iw.Show();
         }
     }
 }

@@ -31,8 +31,8 @@
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
                    
-                    <Button Grid.Column="1" MouseEnter="Btn_MouseEnter" MouseLeave="Btn_MouseLeave" x:Name="btnMask" Grid.Row="0" Content="Maszkok"  Style="{StaticResource RoundButtonTemplate}" FontSize="23" Padding="8" Margin="10,0" Background="#FFF4A261" Foreground="White"/>
-                    <Button Grid.Column="0" MouseEnter="Btn_MouseEnter" MouseLeave="Btn_MouseLeave" x:Name="btnClass" Grid.Row="0" Content="Osztályok"  Style="{StaticResource RoundButtonTemplate}" FontSize="23" Padding="8" Margin="10,0" Background="#FFF4A261" Foreground="White"/>
+                    <Button Grid.Column="1" MouseEnter="Btn_MouseEnter" MouseLeave="Btn_MouseLeave" x:Name="btnMask" Grid.Row="0" Content="Maszkok"  Style="{StaticResource RoundButtonTemplate}" FontSize="23" Padding="8" Margin="10,0" Background="#FFF4A261" Foreground="White" Click="btnMask_Click"/>
+                    <Button Grid.Column="0" MouseEnter="Btn_MouseEnter" MouseLeave="Btn_MouseLeave" x:Name="btnClass" Grid.Row="0" Content="Osztályok"  Style="{StaticResource RoundButtonTemplate}" FontSize="23" Padding="8" Margin="10,0" Background="#FFF4A261" Foreground="White" Click="btnClass_Click"/>
                 </Grid>
             </Grid>
         </Viewbox>

@@ -146,3 +146,13 @@ C:\Users\Balázsi Edina\Desktop\ipTC\obj\Debug\netcoreapp3.1\Pages\Sugo.baml
 C:\Users\Balázsi Edina\Desktop\ipTC\bin\Debug\netcoreapp3.1\instagramlogo.png
 C:\Users\Balázsi Edina\Desktop\ipTC\bin\Debug\netcoreapp3.1\facebooklogo.png
 C:\Users\Balázsi Edina\Desktop\ipTC\bin\Debug\netcoreapp3.1\githublogo.png
+D:\things\Programs\IP-TranslatorCalculator\bin\Debug\netcoreapp3.1\facebooklogo.png
+D:\things\Programs\IP-TranslatorCalculator\bin\Debug\netcoreapp3.1\githublogo.png
+D:\things\Programs\IP-TranslatorCalculator\bin\Debug\netcoreapp3.1\instagramlogo.png
+D:\things\Programs\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\IP-TranslatorCalculator.csprojAssemblyReference.cache
+D:\things\Programs\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\Infos\InfoClass.g.cs
+D:\things\Programs\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\Infos\InfoWindow.g.cs
+D:\things\Programs\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\Infos\InfoClass.baml
+D:\things\Programs\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\Infos\InfoWindow.baml
+D:\things\Programs\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\Infos\InfoMask.g.cs
+D:\things\Programs\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\Infos\InfoMask.baml

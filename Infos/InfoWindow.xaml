@@ -1,0 +1,35 @@
+﻿<Window x:Class="IP_TranslatorCalculator.Infos.InfoWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:IP_TranslatorCalculator.Infos"
+        mc:Ignorable="d"
+        Title="Információk" Height="400" Width="600"
+        WindowStyle="None" Background="Transparent"
+        AllowsTransparency="True"
+        WindowStartupLocation="CenterScreen" MouseDown="Window_MouseDown">
+    <Border CornerRadius="10" BorderThickness="15">
+        <Border.BorderBrush>
+            <LinearGradientBrush StartPoint="0, 0" EndPoint="1, 1" >
+                <GradientStop Color="#264653" Offset="0.0" />
+                <GradientStop Color="#FF1D6C62" Offset="0.5" />
+                <GradientStop Color="#FF3DA89B" Offset="1" />
+            </LinearGradientBrush>
+        </Border.BorderBrush>
+
+        <Grid>
+            <Frame Source="" NavigationUIVisibility="Hidden" Name="Content"/>
+            <Button MouseEnter="btn_close_MouseEnter" MouseLeave="btn_close_MouseLeave" x:Name="btn_close" Style="{StaticResource RoundButtonTemplate}" Grid.Row="0" Grid.Column="1" Width="20" Height="20" Margin="0,10,4,0" Background="#FF605C" Click="btn_close_Click" VerticalAlignment="Top" HorizontalAlignment="Right"/>
+            <Button x:Name="btn_minimize" Style="{StaticResource RoundButtonTemplate}" Grid.Row="0" Grid.Column="1" Width="20" Height="20" VerticalAlignment="Top" Margin="0,10,30,0" HorizontalAlignment="Right" Background="#FFBD44" MouseEnter="btn_minimize_MouseEnter" MouseLeave="btn_minimize_MouseLeave" Click="btn_minimize_Click_1"/>
+            <Grid.Background>
+                <LinearGradientBrush StartPoint="0, 0" EndPoint="1, 1">
+                    <GradientStop Color="#264653" Offset="0.0" />
+                    <GradientStop Color="#FF1D6C62" Offset="0.5" />
+                    <GradientStop Color="#FF3DA89B" Offset="1" />
+                </LinearGradientBrush>
+            </Grid.Background>
+
+        </Grid>
+    </Border>
+</Window>
