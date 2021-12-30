@@ -21,13 +21,13 @@
 
 
         <Viewbox>
-            <Button Width="310" Margin="25,5,25,5" Style="{StaticResource RoundButtonTemplate}" x:Name="BtnTranslate" Content="IP-v4 átváltó"  FontSize="30" FontWeight="Bold" Click="BtnClick_Translate" Grid.RowSpan="2" Background="#FFF4A261" Foreground="White" MouseEnter="Btn_MouseEnter" MouseLeave="Btn_MouseLeave"></Button>
+            <Button Width="310" Height="50" Margin="25,5,25,5" Style="{StaticResource RoundButtonTemplate}" x:Name="BtnTranslate" Content="IP-v4 átváltó"  FontSize="30" FontWeight="Bold" Click="BtnClick_Translate" Grid.RowSpan="2" Background="#FFF4A261" Foreground="White" MouseEnter="Btn_MouseEnter" MouseLeave="Btn_MouseLeave"></Button>
         </Viewbox>
         <Viewbox Grid.Row="1">
-            <Button  Width="310" Margin="25,5,25,5" Style="{StaticResource RoundButtonTemplate}" MouseEnter="Btn_MouseEnter" MouseLeave="Btn_MouseLeave" x:Name="BtnOptimizer" Content="Hálózat optimalizáló"  FontSize="30" FontWeight="Bold"  Click="BtnClick_Optimizer" Grid.RowSpan="2" Background="#FFF4A261" Foreground="White" />
+            <Button  Width="310" Height="50" Margin="25,5,25,5" Style="{StaticResource RoundButtonTemplate}" MouseEnter="Btn_MouseEnter" MouseLeave="Btn_MouseLeave" x:Name="BtnOptimizer" Content="Hálózat optimalizáló"  FontSize="30" FontWeight="Bold"  Click="BtnClick_Optimizer" Grid.RowSpan="2" Background="#FFF4A261" Foreground="White" />
         </Viewbox>
         <Viewbox Grid.Row="2">
-            <Button Grid.Column="2" Width="310" Margin="25,5,25,5" Style="{StaticResource RoundButtonTemplate}" MouseEnter="Btn_MouseEnter" MouseLeave="Btn_MouseLeave" x:Name="BtnNwAddress" Content="Súgó"  FontSize="30" FontWeight="Bold" Click="BtnClick_Nw" Grid.RowSpan="2" Background="#FFF4A261" Foreground="White" ></Button>
+            <Button Grid.Column="2" Width="310" Height="50" Margin="25,5,25,5" Style="{StaticResource RoundButtonTemplate}" MouseEnter="Btn_MouseEnter" MouseLeave="Btn_MouseLeave" x:Name="BtnNwAddress" Content="Súgó"  FontSize="30" FontWeight="Bold" Click="BtnClick_Nw" Grid.RowSpan="2" Background="#FFF4A261" Foreground="White" ></Button>
         </Viewbox>
         <Viewbox Grid.Row="3" HorizontalAlignment="Center">
             <Label Content="IP-számláló" FontFamily="Arial Black" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Margin="0,0,0,20" FontSize="50" Height="auto"  Background="#00000000" Foreground="#FF10313E" VerticalContentAlignment="Center" VerticalAlignment="Center" />
