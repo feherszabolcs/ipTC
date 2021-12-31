@@ -9,12 +9,48 @@
       Title="Információk">
 
     <Grid>
-        <Label Content="kuki kuki erted?"/>
         <!--  
         Osztályok tartománya + E,D-t mire használják
         Privát tartományok
         ami eszedbe jut
-        Szépen formázva ez is meg a masik is
+        Szépen formázva ez is meg a másik is
         -->
+        <Label Content="IPv4 osztályok:" Foreground="White" FontSize="20" HorizontalAlignment="Center" Margin="0,5,0,0" FontWeight="Bold"/>
+        <Label Foreground="White" FontSize="15" Margin="5,43,5,0" HorizontalAlignment="Center">
+            "A osztály" - Az 1.0.0.0 és 127.0.0.0 közötti hálózatokat foglalja magában.
+        </Label>
+        <Label Foreground="White" FontSize="15" Margin="5,65,5,0" HorizontalAlignment="Center">
+            Az „A” osztályban 125 darab hálózatot lehet létrehozni.
+        </Label>
+        <Label Foreground="White" FontSize="15" Margin="5,102,5,0" HorizontalAlignment="Center">
+            „B” osztály - A 128.0.0.0 és a 191.255.0.0 közötti hálózatokat foglalja magában.
+        </Label>
+        <Label Foreground="White" FontSize="15" Margin="5,122,5,0" HorizontalAlignment="Center">
+            Az „B” osztályban 16368 darab hálózatot lehet létrehozni.
+        </Label>
+        <Label Foreground="White" FontSize="15" Margin="5,157,5,0" HorizontalAlignment="Center">
+            „C” osztály - a 192.0.0.0 és a 223.255.255.0 közötti hálózatokat foglalja magában.
+        </Label>
+        <Label Foreground="White" FontSize="15" Margin="5,177,5,0" HorizontalAlignment="Center">
+            Az „C” osztályban 2,096,897 darab hálózatot lehet létrehozni.
+        </Label>
+        <Label Foreground="White" FontSize="15" Margin="5,212,5,0" HorizontalAlignment="Center">
+            „D” osztály - a 224.0.0.0 - 239.0.0.0 közötti címek tartoznak hozzájuk, multicasting
+        </Label>
+        <Label Foreground="White" FontSize="15" Margin="5,232,5,0" HorizontalAlignment="Center">
+            eljárás céljaira vannak fenntartva.
+        </Label>
+        <Label Foreground="White" FontSize="15" Margin="5,267,5,0" HorizontalAlignment="Center">
+            „E” osztály - a 240.0.0.0 - 255.0.0.0 közötti címek tartoznak hozzájuk, melyek az
+        </Label>
+        <Label Foreground="White" FontSize="15" Margin="5,287,5,0" HorizontalAlignment="Center">
+            Internet saját céljaira fenntartott címek.
+        </Label>
+        <Label Foreground="White" FontSize="15" Margin="5,320,5,0" HorizontalAlignment="Center" FontWeight="DemiBold">
+            Privát címek:
+        </Label>
+        <Label Foreground="White" FontSize="15" Margin="5,340,5,0" HorizontalAlignment="Center">
+            10.0.0.0-10.255.255.255 || 172.16.0.0-172.31.255.255 || 192.168.0.0-192.168.255.255
+        </Label>
     </Grid>
 </Page>

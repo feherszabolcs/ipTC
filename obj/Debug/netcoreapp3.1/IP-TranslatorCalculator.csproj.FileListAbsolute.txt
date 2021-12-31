@@ -156,3 +156,9 @@ D:\things\Programs\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\Infos\InfoCla
 D:\things\Programs\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\Infos\InfoWindow.baml
 D:\things\Programs\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\Infos\InfoMask.g.cs
 D:\things\Programs\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\Infos\InfoMask.baml
+C:\Users\Balázsi Edina\Desktop\ipTC\obj\Debug\netcoreapp3.1\Infos\InfoClass.g.cs
+C:\Users\Balázsi Edina\Desktop\ipTC\obj\Debug\netcoreapp3.1\Infos\InfoMask.g.cs
+C:\Users\Balázsi Edina\Desktop\ipTC\obj\Debug\netcoreapp3.1\Infos\InfoWindow.g.cs
+C:\Users\Balázsi Edina\Desktop\ipTC\obj\Debug\netcoreapp3.1\Infos\InfoClass.baml
+C:\Users\Balázsi Edina\Desktop\ipTC\obj\Debug\netcoreapp3.1\Infos\InfoMask.baml
+C:\Users\Balázsi Edina\Desktop\ipTC\obj\Debug\netcoreapp3.1\Infos\InfoWindow.baml
