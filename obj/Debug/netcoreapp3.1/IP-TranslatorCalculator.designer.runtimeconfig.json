@@ -6,8 +6,8 @@
       "version": "3.1.0"
     },
     "additionalProbingPaths": [
-      "C:\\Users\\Balázsi Edina\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\Balázsi Edina\\.nuget\\packages"
+      "C:\\Users\\Szabolcs\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Szabolcs\\.nuget\\packages"
     ],
     "configProperties": {
       "Microsoft.NETCore.DotNetHostPolicy.SetAppPaths": true

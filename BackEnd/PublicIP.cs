@@ -9,14 +9,10 @@ namespace IP_TranslatorCalculator.BackEnd
 {
     class PublicIP
     {
-        public static readonly IPAddress _ClassA = IPAddress.Parse("255.0.0.0");
-        public static readonly IPAddress _ClassB = IPAddress.Parse("255.255.0.0");
-        public static readonly IPAddress _ClassC = IPAddress.Parse("255.255.255.0");
-        public List<IPAddress> usedIPs = new List<IPAddress>();
         public IPAddress StoreIP()
         {
             string UserIpInString = "";
-            //Return the user's public ip
+            //Publikus ip megszerzése
             try
             {
                 UserIpInString = new WebClient().DownloadString("http://icanhazip.com").Replace("\\r\\n", "").Replace("\\n", "").Trim();
@@ -28,9 +24,7 @@ namespace IP_TranslatorCalculator.BackEnd
 
             if (UserIpInString != "")
             {
-                var UserIP = IPAddress.Parse(UserIpInString);
-                usedIPs.Add(UserIP);
-                return UserIP;
+                return IPAddress.Parse(UserIpInString);
             }
             else return null;
 
@@ -38,7 +32,6 @@ namespace IP_TranslatorCalculator.BackEnd
         }
         public string CalculateMaxHost(string ip, string mask) //-> maszkhoz tartozó max hostok
         {
-            NetworkOptimizer nw = new NetworkOptimizer();
             IPTranslate it = new IPTranslate();
 
             string[] m = ip.Split('.');

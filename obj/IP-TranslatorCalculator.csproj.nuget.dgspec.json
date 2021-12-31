@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Balázsi Edina\\Desktop\\ipTC\\IP-TranslatorCalculator.csproj": {}
+    "D:\\things\\Programs\\IP-TranslatorCalculator\\IP-TranslatorCalculator.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Balázsi Edina\\Desktop\\ipTC\\IP-TranslatorCalculator.csproj": {
+    "D:\\things\\Programs\\IP-TranslatorCalculator\\IP-TranslatorCalculator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Balázsi Edina\\Desktop\\ipTC\\IP-TranslatorCalculator.csproj",
+        "projectUniqueName": "D:\\things\\Programs\\IP-TranslatorCalculator\\IP-TranslatorCalculator.csproj",
         "projectName": "IP-TranslatorCalculator",
-        "projectPath": "C:\\Users\\Balázsi Edina\\Desktop\\ipTC\\IP-TranslatorCalculator.csproj",
-        "packagesPath": "C:\\Users\\Balázsi Edina\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Balázsi Edina\\Desktop\\ipTC\\obj\\",
+        "projectPath": "D:\\things\\Programs\\IP-TranslatorCalculator\\IP-TranslatorCalculator.csproj",
+        "packagesPath": "C:\\Users\\Szabolcs\\.nuget\\packages\\",
+        "outputPath": "D:\\things\\Programs\\IP-TranslatorCalculator\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Balázsi Edina\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Szabolcs\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +26,6 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -38,7 +37,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "imports": [
             "net461",
             "net462",
@@ -57,7 +55,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

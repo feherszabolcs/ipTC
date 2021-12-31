@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\Balázsi Edina\Desktop\ipTC\obj\Debug\netcoreapp3.1\
+D:\things\Programs\IP-TranslatorCalculator\obj\Debug\netcoreapp3.1\
 IP_TranslatorCalculator
 none
 false
-TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
-C:\Users\Balázsi Edina\Desktop\ipTC\App.xaml
-10-218236569
-51182035809
-131084949398
-192-1533232326
+TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1
+D:\things\Programs\IP-TranslatorCalculator\App.xaml
+101782074711
+51207225621
+13-1670147474
+1921654412462
 Infos\InfoClass.xaml;Infos\InfoMask.xaml;Infos\InfoWindow.xaml;Keszitok\Authors.xaml;Keszitok\ContentPage.xaml;Pages\HomePage.xaml;Pages\IPTranslate.xaml;Pages\MainWindow.xaml;Pages\NetworkOptimizer.xaml;Pages\Sugo.xaml;
 
 False

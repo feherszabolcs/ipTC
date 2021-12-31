@@ -10,7 +10,7 @@ using System;
 namespace IP_TranslatorCalculator.Pages
 {
     /// <summary>
-    /// Interaction logic for Sugo.xaml
+    /// Interaction logic for Sugo.xaml, only Click and Hover events
     /// </summary>
     public partial class Sugo : Page
     {
@@ -63,7 +63,7 @@ namespace IP_TranslatorCalculator.Pages
 
         private void btnMask_Click(object sender, RoutedEventArgs e)
         {
-            InfoWindow iw = new InfoWindow();
+            InfoWindow iw = new InfoWindow(); //hahahah, menő a kódban hagyni ilyen kommenteket, nem? FSz
             iw.Content.Source = new Uri("/Infos/InfoMask.xaml", UriKind.Relative);
             iw.Show();
         }
