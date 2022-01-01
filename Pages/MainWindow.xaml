@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:IP_TranslatorCalculator"
         mc:Ignorable="d"
         WindowStyle="None"
-        Title="IP-számoló" MinHeight="800" MinWidth="550" MaxWidth="900" MaxHeight="1000"  Width="650" Height="800" AllowsTransparency="True" Background="Transparent" WindowStartupLocation="CenterScreen" MouseDown="Window_MouseDown">
+        Title="IP-számoló" MinHeight="800" MinWidth="550" MaxWidth="900" MaxHeight="1000"  Width="650" Height="800" AllowsTransparency="True" Background="Transparent" WindowStartupLocation="CenterScreen" MouseDown="Window_MouseDown" Icon="/unnamed (1).png">
 
     <Border CornerRadius="10" BorderThickness="15">
         <Border.BorderBrush>

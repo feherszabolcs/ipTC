@@ -8,7 +8,7 @@
         Title="Információk" Height="400" Width="600"
         WindowStyle="None" Background="Transparent"
         AllowsTransparency="True"
-        WindowStartupLocation="CenterScreen" MouseDown="Window_MouseDown">
+        WindowStartupLocation="CenterScreen" MouseDown="Window_MouseDown" Icon="/Infos/noun-informatics-1932409.png">
     <Border CornerRadius="10" BorderThickness="15">
         <Border.BorderBrush>
             <LinearGradientBrush StartPoint="0, 0" EndPoint="1, 1" >
