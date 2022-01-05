@@ -13,7 +13,6 @@
     <None Remove="home_button.png" />
     <None Remove="home_button_light.png" />
     <None Remove="instagramlogo.png" />
-    <None Remove="Pages\noun-informatics-1932409.png" />
     <None Remove="Pages\unnamed %281%29.png" />
   </ItemGroup>
 
@@ -39,8 +38,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Pages\noun-informatics-1932409.png" />
-    <Resource Include="unnamed %281%29.png" />
+    <Resource Include="unnamed %281%29.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
 </Project>
