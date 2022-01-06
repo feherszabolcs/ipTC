@@ -15,7 +15,7 @@
             <RowDefinition Height="7*"/>
             <RowDefinition Height="10*"/>
             <RowDefinition Height="6*"/>
-            <RowDefinition Height="100"/>
+            <RowDefinition Height="110"/>
             <RowDefinition Height="100" />
         </Grid.RowDefinitions>
 
@@ -104,7 +104,7 @@
 
         <!--HOME-->
         <Viewbox VerticalAlignment="Bottom" Grid.Row="3" HorizontalAlignment="Center" Height="auto">
-            <Button Style="{DynamicResource NoHover}" Height="30" BorderBrush="{x:Null}"  x:Name="BtnHome" Width="30" HorizontalAlignment="Center" Margin="5" Click="BtnHome_click" MouseEnter="BtnHome_MouseEnter" MouseLeave="BtnHome_MouseLeave">
+            <Button Style="{DynamicResource NoHover}" Height="30" BorderBrush="{x:Null}"  x:Name="BtnHome" Width="30" HorizontalAlignment="Center" Margin="2" Click="BtnHome_click" MouseEnter="BtnHome_MouseEnter" MouseLeave="BtnHome_MouseLeave">
                 <Button.Background >
                     <ImageBrush ImageSource="/home_button_light.png"/>
                 </Button.Background>

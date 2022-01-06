@@ -17,7 +17,7 @@
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="4*"/>
-            <RowDefinition Height="100"/>
+            <RowDefinition Height="110"/>
             <RowDefinition Height="100"/>
         </Grid.RowDefinitions>
 
@@ -44,7 +44,7 @@
         <CheckBox Grid.Column="1" x:Name="ChbBin" Content="Bináris" Foreground="White" HorizontalAlignment="Center" Height="auto" FontSize="40" FontWeight="Bold" Checked="ChbBin_Checked" Margin="25,50"/>
 
         <!--Bináris input-->
-        <Viewbox Grid.Row="1" Grid.ColumnSpan="2" VerticalAlignment="Center" Margin="20,30,50,0">
+        <Viewbox Grid.Row="1" Grid.ColumnSpan="2" VerticalAlignment="Center" Margin="10,30,35,0">
             <Grid>
                 <TextBox Width="350" Margin="10,0" Visibility="Hidden" x:Name="TbBinform" HorizontalAlignment="Center" PreviewTextInput="TbBinform_PreviewTextInput" VerticalAlignment="Top" FontSize="24" MaxLength="32" FontWeight="Bold"/>
             </Grid>
@@ -53,7 +53,7 @@
 
         <!--Home Gomb-->
         <Viewbox VerticalAlignment="Bottom" Grid.Row="3" Grid.ColumnSpan="2"  HorizontalAlignment="Center" Height="auto">
-            <Button Style="{DynamicResource NoHover}" Height="30" BorderBrush="{x:Null}"  x:Name="BtnHome" Width="30" HorizontalAlignment="Center" Margin="5" Click="BtnHome_click" MouseEnter="BtnHome_MouseEnter" MouseLeave="BtnHome_MouseLeave">
+            <Button Style="{DynamicResource NoHover}" Height="30" BorderBrush="{x:Null}"  x:Name="BtnHome" Width="30" HorizontalAlignment="Center" Margin="2" Click="BtnHome_click" MouseEnter="BtnHome_MouseEnter" MouseLeave="BtnHome_MouseLeave">
                 <Button.Background >
                     <ImageBrush ImageSource="/home_button_light.png"/>
                 </Button.Background>

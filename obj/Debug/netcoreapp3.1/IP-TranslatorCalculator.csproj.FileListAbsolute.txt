@@ -162,3 +162,21 @@ C:\Users\Balázsi Edina\Desktop\ipTC\obj\Debug\netcoreapp3.1\Infos\InfoWindow.g.
 C:\Users\Balázsi Edina\Desktop\ipTC\obj\Debug\netcoreapp3.1\Infos\InfoClass.baml
 C:\Users\Balázsi Edina\Desktop\ipTC\obj\Debug\netcoreapp3.1\Infos\InfoMask.baml
 C:\Users\Balázsi Edina\Desktop\ipTC\obj\Debug\netcoreapp3.1\Infos\InfoWindow.baml
+C:\Users\Balázsi.Bálint\Desktop\ipTC\ipTC\bin\Debug\netcoreapp3.1\home_button.png
+C:\Users\Balázsi.Bálint\Desktop\ipTC\ipTC\bin\Debug\netcoreapp3.1\home_button_light.png
+C:\Users\Balázsi.Bálint\Desktop\ipTC\ipTC\bin\Debug\netcoreapp3.1\facebooklogo.png
+C:\Users\Balázsi.Bálint\Desktop\ipTC\ipTC\bin\Debug\netcoreapp3.1\githublogo.png
+C:\Users\Balázsi.Bálint\Desktop\ipTC\ipTC\bin\Debug\netcoreapp3.1\instagramlogo.png
+C:\Users\Balázsi.Bálint\Desktop\ipTC\ipTC\obj\Debug\netcoreapp3.1\Infos\InfoClass.g.cs
+C:\Users\Balázsi.Bálint\Desktop\ipTC\ipTC\obj\Debug\netcoreapp3.1\Infos\InfoMask.g.cs
+C:\Users\Balázsi.Bálint\Desktop\ipTC\ipTC\obj\Debug\netcoreapp3.1\Infos\InfoWindow.g.cs
+C:\Users\Balázsi.Bálint\Desktop\ipTC\ipTC\obj\Debug\netcoreapp3.1\Keszitok\Authors.g.cs
+C:\Users\Balázsi.Bálint\Desktop\ipTC\ipTC\obj\Debug\netcoreapp3.1\Keszitok\ContentPage.g.cs
+C:\Users\Balázsi.Bálint\Desktop\ipTC\ipTC\obj\Debug\netcoreapp3.1\Pages\Sugo.g.cs
+C:\Users\Balázsi.Bálint\Desktop\ipTC\ipTC\obj\Debug\netcoreapp3.1\IP-TranslatorCalculator_Content.g.cs
+C:\Users\Balázsi.Bálint\Desktop\ipTC\ipTC\obj\Debug\netcoreapp3.1\Infos\InfoClass.baml
+C:\Users\Balázsi.Bálint\Desktop\ipTC\ipTC\obj\Debug\netcoreapp3.1\Infos\InfoMask.baml
+C:\Users\Balázsi.Bálint\Desktop\ipTC\ipTC\obj\Debug\netcoreapp3.1\Infos\InfoWindow.baml
+C:\Users\Balázsi.Bálint\Desktop\ipTC\ipTC\obj\Debug\netcoreapp3.1\Keszitok\Authors.baml
+C:\Users\Balázsi.Bálint\Desktop\ipTC\ipTC\obj\Debug\netcoreapp3.1\Keszitok\ContentPage.baml
+C:\Users\Balázsi.Bálint\Desktop\ipTC\ipTC\obj\Debug\netcoreapp3.1\Pages\Sugo.baml
