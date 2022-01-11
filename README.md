@@ -7,7 +7,7 @@ Angol nyelv hamarosan elérhető lesz.
 Az ip-címekkel való számolások megkönnyítése, offline módban is.
 A program rendelkezik súgó funkcióval, az alapok elsajátításának érdekében.
 
-##Contributors
+## Contributors
 
 Balázsi Bálint -- GUI
 Gubicza Milán -- Grafikai elemek, GUI
