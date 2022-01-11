@@ -9,5 +9,5 @@ A program rendelkezik súgó funkcióval, az alapok elsajátításának érdeké
 
 ## Contributors
 
-Balázsi Bálint -- GUI
+Balázsi Bálint -- GUI      
 Gubicza Milán -- Grafikai elemek, GUI
