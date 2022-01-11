@@ -4,8 +4,9 @@
 Angol nyelv hamarosan elérhető lesz.
 
 ## Használat
-Az ip-címekkel való számolások megkönnyítése, offline módban is.
+Az ip-címekkel való számolások megkönnyítése, offline módban is. (A Saját IP Használata funkció csak internetkapcsolattal érhető el!) 
 A program rendelkezik súgó funkcióval, az alapok elsajátításának érdekében.
+
 
 ## Contributors
 
